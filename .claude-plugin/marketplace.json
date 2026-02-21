@@ -1,0 +1,174 @@
+{
+  "name": "pathology-skills-collection",
+  "owner": {
+    "name": "Serdar Balci",
+    "email": "serdarbalci@serdarbalci.com"
+  },
+  "metadata": {
+    "description": "Comprehensive clinical pathology toolkit - 10 specialized skills for surgical pathology quality assurance, CAP/ICCR compliance checking, TNM staging, synoptic reporting, and SNOMED coding for breast, colorectal, pancreas, and gastric carcinoma.",
+    "version": "1.0.0",
+    "pluginRoot": "./pathology-skills"
+  },
+  "plugins": [
+    {
+      "name": "colorectal-pathology-specialist",
+      "source": "./colorectal-specialist",
+      "description": "Complete colorectal cancer pathology workflow - CAP/ICCR compliance, TNM staging, MSI/MMR interpretation, mesorectal excision assessment, and SNOMED coding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "colorectal", "colon", "rectal", "cap", "iccr", "tnm", "compliance"],
+      "category": "healthcare",
+      "tags": ["specialist", "colorectal", "compliance", "staging"]
+    },
+    {
+      "name": "breast-pathology-specialist",
+      "source": "./breast-specialist",
+      "description": "Complete breast cancer pathology workflow - CAP/ICCR compliance, TNM staging, ER/PR/HER2 reporting, and SNOMED coding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "breast", "mammary", "cap", "iccr", "tnm", "biomarkers", "her2"],
+      "category": "healthcare",
+      "tags": ["specialist", "breast", "biomarkers", "compliance"]
+    },
+    {
+      "name": "pancreas-pathology-specialist",
+      "source": "./pancreas-specialist",
+      "description": "Complete pancreas cancer pathology workflow - CAP/ICCR compliance, TNM staging, Whipple margins, and SNOMED coding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "pancreas", "pancreatic", "whipple", "cap", "iccr", "tnm"],
+      "category": "healthcare",
+      "tags": ["specialist", "pancreas", "whipple", "compliance"]
+    },
+    {
+      "name": "gastric-pathology-specialist",
+      "source": "./gastric-specialist",
+      "description": "Complete gastric cancer pathology workflow - CAP/ICCR compliance, TNM staging, Lauren classification, HER2, and SNOMED coding",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "gastric", "stomach", "cap", "iccr", "tnm", "lauren"],
+      "category": "healthcare",
+      "tags": ["specialist", "gastric", "compliance"]
+    },
+    {
+      "name": "pathology-compliance-checker",
+      "source": "./compliance-checker",
+      "description": "CAP/ICCR compliance validation with severity-based scoring and pT/pN cross-validation for all tumor types",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "compliance", "cap", "iccr", "quality-assurance", "validation"],
+      "category": "healthcare",
+      "tags": ["compliance", "quality-assurance", "validation"]
+    },
+    {
+      "name": "pathology-template-generator",
+      "source": "./template-generator",
+      "description": "Generate blank or pre-filled CAP synoptic templates with all required elements",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "templates", "synoptic", "cap", "generation"],
+      "category": "healthcare",
+      "tags": ["templates", "synoptic", "generation"]
+    },
+    {
+      "name": "tnm-stage-calculator",
+      "source": "./tnm-stage-calculator",
+      "description": "Fast TNM stage group calculation using AJCC 8th edition criteria with validation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "staging", "tnm", "ajcc", "calculator"],
+      "category": "healthcare",
+      "tags": ["staging", "tnm", "calculator"]
+    },
+    {
+      "name": "pathology-coder",
+      "source": "./pathology-coder",
+      "description": "SNOMED CT and ICD-O-3 code suggestions with hierarchical relationships",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "coding", "snomed", "icd-o-3", "billing"],
+      "category": "healthcare",
+      "tags": ["coding", "snomed", "billing"]
+    },
+    {
+      "name": "pathology-tumor-board-summary",
+      "source": "./tumor-board-summary",
+      "description": "Generate concise 3-5 line MDT summaries with key clinical elements",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "tumor-board", "mdt", "summary", "oncology"],
+      "category": "healthcare",
+      "tags": ["tumor-board", "mdt", "summary"]
+    },
+    {
+      "name": "report-converter",
+      "source": "./report-converter",
+      "description": "Convert free-text reports to CAP synoptic format and generate amendments",
+      "version": "1.0.0",
+      "author": {
+        "name": "Serdar Balci",
+        "email": "serdarbalci@serdarbalci.com"
+      },
+      "homepage": "https://github.com/sbalci/pathology-skills-collection",
+      "repository": "https://github.com/sbalci/pathology-skills-collection",
+      "license": "MIT",
+      "keywords": ["pathology", "conversion", "synoptic", "amendments", "legacy"],
+      "category": "healthcare",
+      "tags": ["conversion", "synoptic", "amendments"]
+    }
+  ]
+}

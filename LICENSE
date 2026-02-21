@@ -1,0 +1,59 @@
+MIT License
+
+Copyright (c) 2026 Serdar Balci
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+CLINICAL GUIDELINES ATTRIBUTION:
+
+This software incorporates clinical guidelines and protocols from:
+
+- CAP (College of American Pathologists) - Cancer Protocol Templates
+  © College of American Pathologists. Used with permission for educational
+  and quality assurance purposes.
+
+- ICCR (International Collaboration on Cancer Reporting) - Cancer Datasets
+  © International Collaboration on Cancer Reporting. Used for educational
+  and quality assurance purposes.
+
+- AJCC (American Joint Committee on Cancer) - TNM Staging Manual 8th Edition
+  © American Joint Committee on Cancer. Staging information used for
+  educational purposes.
+
+- AAPA (American Association of Pathology Assistants) - Macroscopic
+  Examination Guidelines
+  © American Association of Pathology Assistants. Used for educational
+  purposes.
+
+- WHO (World Health Organization) - Classification of Tumours 5th Edition
+  © World Health Organization. Classification information used for
+  educational purposes.
+
+Users of this software are responsible for ensuring compliance with all
+applicable guidelines and obtaining necessary permissions for clinical use.
+
+DISCLAIMER:
+
+This software is intended for educational and quality assurance purposes.
+Clinical decisions should always be made by qualified healthcare professionals
+based on the most current clinical guidelines and individual patient
+circumstances. The authors and contributors assume no liability for clinical
+decisions made using this software.

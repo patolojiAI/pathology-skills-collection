@@ -1,0 +1,20 @@
+# Multi-format Pathology Report Processing
+# Required dependencies for pathology-skills-collection
+
+# Core dependencies
+anthropic>=0.18.0       # Claude API client
+pandas>=2.0.0           # Excel/CSV reading and data manipulation
+openpyxl>=3.1.0         # Excel file writing
+
+# Optional dependencies for enhanced functionality
+pypdf>=3.0.0            # Fast PDF text extraction (fallback before vision API)
+python-docx>=1.0.0      # Word document support
+watchdog>=3.0.0         # Watch folder functionality
+tqdm>=4.60.0            # Progress bars for batch processing
+pillow>=10.0.0          # Image preprocessing (if needed)
+
+# Installation:
+# pip install -r requirements.txt
+#
+# For minimal installation (text and Excel only):
+# pip install anthropic pandas openpyxl

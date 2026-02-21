@@ -1,0 +1,33 @@
+report_text,patient_id,tumor_type
+"PATHOLOGY REPORT
+Patient ID: EX-BR-001
+Specimen: Left breast lumpectomy
+DIAGNOSIS: Invasive ductal carcinoma, Grade 2, 2.3 cm
+ER: Positive (95%), PR: Positive (80%), HER2: Negative (1+)
+Margins: All negative
+pT2 N0",EX-BR-001,breast
+"PATHOLOGY REPORT
+Patient ID: EX-CR-002
+Specimen: Sigmoid colon resection
+DIAGNOSIS: Adenocarcinoma, moderately differentiated, 3.5 cm
+pT3 N1a (2/18 nodes positive)
+Margins: Negative, CRM: Clear
+LVI: Present, PNI: Absent
+MMR: Proficient",EX-CR-002,colorectal
+"PATHOLOGY REPORT
+Patient ID: EX-PC-003
+Specimen: Pancreaticoduodenectomy (Whipple)
+DIAGNOSIS: Pancreatic ductal adenocarcinoma, 3.1 cm
+Grade: Moderately differentiated
+pT2 N1 (3/18 nodes positive)
+All margins: Negative
+LVI: Present, PNI: Present",EX-PC-003,pancreas
+"PATHOLOGY REPORT
+Patient ID: EX-GA-004
+Specimen: Total gastrectomy
+DIAGNOSIS: Gastric adenocarcinoma, intestinal type (Lauren)
+Tumor size: 4.2 cm
+Grade: Moderately differentiated
+pT3 N2 (5/22 nodes positive)
+Margins: Negative
+HER2: Negative",EX-GA-004,gastric

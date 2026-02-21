@@ -1,0 +1,65 @@
+PATHOLOGY REPORT
+
+Patient ID: EX-CR-002
+Age: 65 years
+Sex: Male
+Specimen: Sigmoid colon resection
+
+FINAL DIAGNOSIS:
+
+Sigmoid colon, segmental resection:
+- Adenocarcinoma, moderately differentiated
+- Tumor size: 3.5 cm (greatest dimension)
+- Tumor location: 15 cm from distal resection margin
+- Histologic type: Conventional adenocarcinoma
+
+HISTOLOGIC GRADE: Grade 2 (moderately differentiated)
+- Well-formed glands with moderate cytologic atypia
+
+DEPTH OF INVASION:
+- Tumor invades through muscularis propria into pericolorectal tissue
+- pT3
+
+MARGINS:
+- Proximal margin: Negative for carcinoma (10 cm from tumor)
+- Distal margin: Negative for carcinoma (8 cm from tumor)
+- Circumferential resection margin (CRM): Negative (>5 mm)
+
+LYMPHOVASCULAR INVASION: Present
+
+PERINEURAL INVASION: Not identified
+
+LYMPH NODES:
+- Total examined: 18
+- Positive for metastatic carcinoma: 2
+- pN1a (1-3 regional nodes positive)
+- Largest metastatic deposit: 8 mm
+
+TUMOR DEPOSITS: Not identified
+
+TUMOR BUDDING: Low-grade (focal)
+
+TREATMENT EFFECT: No prior therapy
+
+MISMATCH REPAIR PROTEINS (Immunohistochemistry):
+- MLH1: Retained (positive nuclear expression)
+- MSH2: Retained (positive nuclear expression)
+- MSH6: Retained (positive nuclear expression)
+- PMS2: Retained (positive nuclear expression)
+- Interpretation: Mismatch repair proficient (pMMR)
+
+ADDITIONAL FINDINGS:
+- Background mucosa: Multiple tubular adenomas
+- No perforation
+- No serosal involvement
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT3: Tumor invades through muscularis propria into pericolorectal tissue
+- pN1a: Metastasis in 1-3 regional lymph nodes
+- pM0: No distant metastasis (clinical)
+- Stage IIIB
+
+RESECTION STATUS: R0 (complete excision)
+
+COMMENT:
+This is a moderately differentiated adenocarcinoma of sigmoid colon with transmural invasion (pT3) and regional lymph node metastases (pN1a), Stage IIIB. Complete excision achieved. Tumor shows mismatch repair protein expression (pMMR), suggesting sporadic rather than Lynch syndrome-associated carcinoma. Recommend clinical correlation and consideration of adjuvant chemotherapy.

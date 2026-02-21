@@ -1,0 +1,52 @@
+PATHOLOGY REPORT
+
+Patient ID: EX-BR-001
+Age: 58 years
+Sex: Female
+Specimen: Left breast lumpectomy
+
+FINAL DIAGNOSIS:
+
+Left breast, lumpectomy:
+- Invasive ductal carcinoma, grade 2 (moderately differentiated)
+- Tumor size: 2.3 cm (greatest dimension)
+- Histologic type: Invasive ductal carcinoma, NOS
+- Nottingham histologic grade: 3+2+2 = 7 (Grade 2)
+  - Tubular formation: 3 (minimal, <10%)
+  - Nuclear pleomorphism: 2 (moderate variation)
+  - Mitotic count: 2 (8 mitoses per 10 HPF)
+
+MARGINS:
+- Superior margin: Negative (invasive carcinoma 3 mm from margin)
+- Inferior margin: Negative (invasive carcinoma 5 mm from margin)
+- Medial margin: Negative (invasive carcinoma 8 mm from margin)
+- Lateral margin: Negative (invasive carcinoma 6 mm from margin)
+- Anterior margin: Negative (invasive carcinoma 4 mm from margin)
+- Posterior margin: Negative (invasive carcinoma 7 mm from margin)
+
+LYMPHOVASCULAR INVASION: Not identified
+
+PERINEURAL INVASION: Not identified
+
+DCIS COMPONENT:
+- Present, focal
+- Nuclear grade: Intermediate
+- Architecture: Solid and cribriform
+
+BIOMARKER STUDIES (Immunohistochemistry):
+- ER (estrogen receptor): Positive (95% of tumor cells, strong intensity)
+- PR (progesterone receptor): Positive (80% of tumor cells, moderate to strong intensity)
+- HER2 (immunohistochemistry): Negative (1+ score)
+- Ki-67 proliferation index: 18%
+
+BACKGROUND BREAST TISSUE:
+- Fibrocystic changes
+- No atypical hyperplasia
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT2 (tumor >2 cm but ≤5 cm)
+- Lymph nodes not submitted
+- Status: R0 (complete excision, negative margins)
+
+COMMENT:
+This is an invasive ductal carcinoma, grade 2, ER-positive, PR-positive, HER2-negative (luminal A subtype). Complete excision achieved with negative margins. Lymph node evaluation pending separate sentinel node biopsy.
