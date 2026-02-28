@@ -22,17 +22,17 @@ All pathology skills in this collection now support processing reports in multip
 ### Process a Single PDF
 ```bash
 cd /path/to/pathology-skills-collection
-python cli-tools/process_skill.py --skill colorectal-pathology-specialist report.pdf --output results/
+python scripts/process_skill.py --skill colorectal-pathology-specialist report.pdf --output results/
 ```
 
 ### Process Excel Batch List
 ```bash
-python cli-tools/process_skill.py --skill breast-pathology-specialist reports.xlsx --output results/
+python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx --output results/
 ```
 
 ### Process Directory with Mixed Formats
 ```bash
-python cli-tools/process_skill.py --skill pathology-compliance-checker input_dir/ --output results/
+python scripts/process_skill.py --skill pathology-compliance-checker input_dir/ --output results/
 ```
 
 ---
@@ -72,7 +72,7 @@ claude "Check this report using pathology-colorectal-pathology-specialist" < rep
 
 **Usage:**
 ```bash
-python cli-tools/process_skill.py --skill pathology-compliance-checker batch_reports.xlsx --output results/
+python scripts/process_skill.py --skill pathology-compliance-checker batch_reports.xlsx --output results/
 ```
 
 **Output:**
@@ -117,7 +117,7 @@ python cli-tools/process_skill.py --skill pathology-compliance-checker batch_rep
 
 **Usage:**
 ```bash
-python cli-tools/process_skill.py --skill breast-pathology-specialist structured_report.xlsx --output results/
+python scripts/process_skill.py --skill breast-pathology-specialist structured_report.xlsx --output results/
 ```
 
 ---
@@ -129,7 +129,7 @@ python cli-tools/process_skill.py --skill breast-pathology-specialist structured
 
 **Usage:**
 ```bash
-python cli-tools/process_skill.py --skill pancreas-pathology-specialist reports.csv --output results/
+python scripts/process_skill.py --skill pancreas-pathology-specialist reports.csv --output results/
 ```
 
 ---
@@ -147,7 +147,7 @@ python cli-tools/process_skill.py --skill pancreas-pathology-specialist reports.
 claude "Analyze this colorectal PDF using pathology-colorectal-pathology-specialist" < report.pdf
 
 # Batch
-python cli-tools/process_skill.py --skill gastric-pathology-specialist report.pdf --output results/
+python scripts/process_skill.py --skill gastric-pathology-specialist report.pdf --output results/
 ```
 
 **Pros:**
@@ -182,7 +182,7 @@ python cli-tools/process_skill.py --skill gastric-pathology-specialist report.pd
 claude "Extract and check this scanned report" < scan.jpg
 
 # Batch
-python cli-tools/process_skill.py --skill breast-pathology-specialist scanned_reports/ --output results/
+python scripts/process_skill.py --skill breast-pathology-specialist scanned_reports/ --output results/
 ```
 
 **Pros:**
@@ -202,7 +202,7 @@ python cli-tools/process_skill.py --skill breast-pathology-specialist scanned_re
 
 **Usage:**
 ```bash
-python cli-tools/process_skill.py --skill pathology-compliance-checker report.docx --output results/
+python scripts/process_skill.py --skill pathology-compliance-checker report.docx --output results/
 ```
 
 ---
@@ -231,7 +231,7 @@ pip install -r requirements.txt
 
 ### Basic Syntax
 ```bash
-python cli-tools/process_skill.py --skill SKILL_NAME INPUT_PATH [OPTIONS]
+python scripts/process_skill.py --skill SKILL_NAME INPUT_PATH [OPTIONS]
 ```
 
 ### Available Skills
@@ -254,22 +254,22 @@ python cli-tools/process_skill.py --skill SKILL_NAME INPUT_PATH [OPTIONS]
 
 **Single file:**
 ```bash
-python cli-tools/process_skill.py --skill breast-pathology-specialist report.pdf --output qa_results/
+python scripts/process_skill.py --skill breast-pathology-specialist report.pdf --output qa_results/
 ```
 
 **Excel batch:**
 ```bash
-python cli-tools/process_skill.py --skill colorectal-pathology-specialist batch.xlsx --output qa_results/
+python scripts/process_skill.py --skill colorectal-pathology-specialist batch.xlsx --output qa_results/
 ```
 
 **Directory (all formats):**
 ```bash
-python cli-tools/process_skill.py --skill pathology-compliance-checker input_dir/ --output qa_results/
+python scripts/process_skill.py --skill pathology-compliance-checker input_dir/ --output qa_results/
 ```
 
 **With custom API key:**
 ```bash
-python cli-tools/process_skill.py --skill pancreas-pathology-specialist report.jpg --api-key sk-ant-...
+python scripts/process_skill.py --skill pancreas-pathology-specialist report.jpg --api-key sk-ant-...
 ```
 
 ---
@@ -369,7 +369,7 @@ export ANTHROPIC_API_KEY=sk-ant-...
 
 **Processing:**
 ```bash
-python cli-tools/process_skill.py --skill pathology-compliance-checker auto_detect.xlsx --output results/
+python scripts/process_skill.py --skill pathology-compliance-checker auto_detect.xlsx --output results/
 ```
 
 The skill will auto-detect "breast" for P001 and "colorectal" for P002.
@@ -379,15 +379,15 @@ The skill will auto-detect "breast" for P001 and "colorectal" for P002.
 # Manual filtering
 mkdir images_only
 cp input_dir/*.jpg input_dir/*.png images_only/
-python cli-tools/process_skill.py --skill breast-pathology-specialist images_only/ --output results/
+python scripts/process_skill.py --skill breast-pathology-specialist images_only/ --output results/
 ```
 
 ### Combine Results from Multiple Skills
 Process same reports with different skills:
 ```bash
-python cli-tools/process_skill.py --skill breast-pathology-specialist reports.xlsx --output results/breast/
-python cli-tools/process_skill.py --skill pathology-compliance-checker reports.xlsx --output results/compliance/
-python cli-tools/process_skill.py --skill pathology-template-generator reports.xlsx --output results/templates/
+python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx --output results/breast/
+python scripts/process_skill.py --skill pathology-compliance-checker reports.xlsx --output results/compliance/
+python scripts/process_skill.py --skill pathology-template-generator reports.xlsx --output results/templates/
 ```
 
 ---
@@ -448,8 +448,8 @@ A: Yes, all skills support English and Turkish.
 - ✅ Added PDF support (pypdf + vision fallback)
 - ✅ Added image support (vision API)
 - ✅ Added CSV support
-- ✅ Created `cli-tools/process_skill.py`
-- ✅ Created `shared-scripts` library
+- ✅ Created `scripts/process_skill.py`
+- ✅ Created `scripts/` library (file_readers, excel_handler)
 - ✅ Updated all 10 skill SKILL.md files
 
 ---

@@ -135,7 +135,7 @@ Add your skill to the `skills` array:
 claude "Test query using your-skill-name" < test-report.txt
 
 # Test with batch processing
-python cli-tools/process_skill.py --skill your-skill-name test.xlsx --output results/
+python scripts/process_skill.py --skill your-skill-name test.xlsx --output results/
 ```
 
 ### Step 6: Add Examples

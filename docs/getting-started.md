@@ -54,7 +54,7 @@ claude "Analyze all .txt files in reports_dir/ using compliance-checker and expo
 Only if you DON'T have Claude CLI:
 ```bash
 export ANTHROPIC_API_KEY="sk-ant-..."
-python cli-tools/process_skill.py --skill compliance-checker reports.xlsx
+python scripts/process_skill.py --skill compliance-checker reports.xlsx
 ```
 
 **See [BATCH_PROCESSING.md](BATCH_PROCESSING.md) for complete guide.**

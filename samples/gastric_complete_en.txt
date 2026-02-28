@@ -1,0 +1,91 @@
+# Sample: Gastric - Complete Report
+# Expected Result: COMPLIANT (Score 100)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-42345
+
+SPECIMEN: Stomach, subtotal gastrectomy with D2 lymph node dissection
+
+CLINICAL HISTORY: 61-year-old male with gastric antral mass. EGD biopsy showed poorly differentiated adenocarcinoma. Staging CT negative for metastases.
+
+GROSS DESCRIPTION:
+Received fresh for HER2 fixation protocol, labeled "subtotal gastrectomy," is a partial gastrectomy specimen measuring 14 x 9 x 4 cm with attached greater omentum (18 x 12 x 2 cm) and lesser omentum (8 x 4 x 1 cm).
+
+Located in the antrum, 3 cm from the distal (duodenal) margin and 8 cm from the proximal margin, is an ulcerated tumor measuring 5.0 x 4.5 x 2.2 cm. The tumor has a Borrmann Type III (ulcerating-infiltrating) appearance.
+
+On sectioning, the tumor invades through the muscularis propria and approaches but does not penetrate the serosa.
+
+Lymph nodes: Multiple lymph nodes identified:
+- Lesser curvature: 8 nodes
+- Greater curvature: 6 nodes
+- Perigastric: 10 nodes
+
+Total: 24 lymph nodes submitted.
+
+Fixation: Specimen placed in formalin within 30 minutes of resection. Total fixation time: 24 hours (within 8-48 hour window for HER2 testing).
+
+DIAGNOSIS:
+
+STOMACH, SUBTOTAL GASTRECTOMY:
+- Adenocarcinoma, poorly cohesive type (including signet ring cell component)
+
+HISTOLOGIC TYPE: Poorly cohesive carcinoma (diffuse type), with signet ring cell features (>50% signet ring cells)
+
+WHO CLASSIFICATION: Poorly cohesive carcinoma
+
+LAUREN CLASSIFICATION: Diffuse type
+
+HISTOLOGIC GRADE: G3, Poorly differentiated
+
+TUMOR LOCATION: Antrum
+
+TUMOR SIZE: 5.0 cm (greatest dimension)
+
+GROSS TYPE (BORRMANN): Type III (ulcerating-infiltrating)
+
+DEPTH OF INVASION: Tumor invades subserosa (pT3)
+- Tumor penetrates muscularis propria and extends into subserosa/perigastric fat
+- No penetration of visceral peritoneum (serosa)
+
+MARGINS:
+- Proximal margin: Negative, 8 cm clearance (>5 cm adequate for diffuse type)
+- Distal margin: Negative, 3 cm clearance
+- Radial (omental) margins: Negative
+
+LYMPHOVASCULAR INVASION: Present, extensive
+
+PERINEURAL INVASION: Present
+
+LYMPH NODES:
+- Total examined: 24 (adequate, ≥16 required)
+- Total positive: 5
+- Distribution: Lesser curvature 3/8, greater curvature 1/6, perigastric 1/10
+- Largest metastasis: 12 mm
+- Extranodal extension: Present
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT3: Tumor penetrates subserosal connective tissue without invasion of visceral peritoneum or adjacent structures
+- pN2: Metastases in 3-6 regional lymph nodes
+- pM: Not applicable (no distant sites submitted)
+
+STAGE GROUP: IIIA
+
+ADDITIONAL FINDINGS:
+- Helicobacter pylori: Not identified on H&E (special stains not performed)
+- Intestinal metaplasia: Present, focal, in non-neoplastic antral mucosa
+- No evidence of hereditary diffuse gastric cancer syndrome features
+
+ANCILLARY STUDIES:
+
+HER2 Testing (performed on primary tumor):
+- HER2 Immunohistochemistry: Score 0 (no staining)
+- Interpretation: NEGATIVE
+
+COMMENT: Poorly cohesive (diffuse type) adenocarcinoma with extensive lymphovascular invasion and 5/24 lymph node metastases. HER2 negative. Given diffuse type histology and age <70, genetic counseling for CDH1 germline testing may be considered. Case discussed at GI tumor board.
+
+Electronically signed by:
+[PATHOLOGIST NAME], MD
+[DATE/TIME]

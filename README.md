@@ -6,6 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/stargazers)
 
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
 ![Skills](https://img.shields.io/badge/skills-10-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
@@ -137,7 +138,7 @@ Only use this if you DON'T have Claude CLI or need programmatic integration:
 ```bash
 # Requires: export ANTHROPIC_API_KEY="your-key-here"
 pip install -r requirements.txt
-python cli-tools/process_skill.py --skill breast-pathology-specialist reports.xlsx
+python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 ```
 
 **🚫 DON'T:** Ask Claude to "generate a Python script" - it will create regex-only code without LLM intelligence!
@@ -171,7 +172,11 @@ python cli-tools/process_skill.py --skill breast-pathology-specialist reports.xl
 ## Documentation
 
 - **[Getting Started Guide](docs/getting-started.md)** - Installation and setup
-- **[Batch Processing Guide](docs/BATCH_PROCESSING.md)** - **NEW!** How to process multiple reports correctly
+- **[Quick Reference](docs/QUICK_REFERENCE.md)** - 1-page trigger phrases and reference card
+- **[Features](docs/FEATURES.md)** - Full feature documentation
+- **[Workflow Guide](docs/WORKFLOW.md)** - Step-by-step compliance workflow
+- **[Batch Processing Guide](docs/BATCH_PROCESSING.md)** - How to process multiple reports correctly
+- **[Local LLM Setup](docs/LOCAL_LLM_SETUP.md)** - Ollama/LM Studio setup for offline use
 - **[Examples](docs/examples.md)** - Common use cases
 - **[Multi-Format Guide](docs/MULTI_FORMAT_GUIDE.md)** - PDF, Excel, images support
 - **[Skills Reference](docs/pathology-skills.md)** - Detailed skill documentation
@@ -185,9 +190,9 @@ python cli-tools/process_skill.py --skill breast-pathology-specialist reports.xl
 pathology-skills-collection/
 ├── pathology-skills/          # 10 individual skills
 ├── shared-references/         # Common guidelines (TNM, codes, templates)
-├── cli-tools/                 # Batch processing scripts
-├── shared-scripts/            # Python utilities
-├── examples/                  # Sample inputs/outputs
+├── scripts/                   # Python tools (batch, single, watch, file readers)
+├── samples/                   # Sample reports with expected outputs
+├── examples/                  # Example inputs/outputs
 ├── docs/                      # Documentation
 ├── install.sh                 # Installation script
 ├── uninstall.sh              # Uninstallation script

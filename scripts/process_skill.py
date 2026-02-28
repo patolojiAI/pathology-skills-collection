@@ -13,9 +13,9 @@ Process reports in any format (text, Excel, CSV, PDF, images) using any skill.
 
 Usage:
     # Requires: export ANTHROPIC_API_KEY="sk-ant-..."
-    python cli-tools/process_skill.py --skill breast-pathology-specialist report.pdf
-    python cli-tools/process_skill.py --skill colorectal-pathology-specialist reports.xlsx --output results/
-    python cli-tools/process_skill.py --skill compliance-checker input_dir/ --output results/
+    python scripts/process_skill.py --skill breast-pathology-specialist report.pdf
+    python scripts/process_skill.py --skill colorectal-pathology-specialist reports.xlsx --output results/
+    python scripts/process_skill.py --skill compliance-checker input_dir/ --output results/
 """
 
 import argparse
@@ -28,7 +28,7 @@ import logging
 # Add parent directory to path for imports
 REPO_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO_ROOT))
-sys.path.insert(0, str(REPO_ROOT / 'shared-scripts'))
+sys.path.insert(0, str(REPO_ROOT / 'scripts'))
 
 from file_readers import read_file_content, is_supported_file, get_supported_extensions
 from excel_handler import export_results_to_excel, create_simple_excel
@@ -259,16 +259,16 @@ def main():
         epilog="""
 Examples:
   # Single PDF
-  python cli-tools/process_skill.py --skill breast-specialist report.pdf
+  python scripts/process_skill.py --skill breast-specialist report.pdf
 
   # Excel batch
-  python cli-tools/process_skill.py --skill colorectal-specialist reports.xlsx --output results/
+  python scripts/process_skill.py --skill colorectal-specialist reports.xlsx --output results/
 
   # Image
-  python cli-tools/process_skill.py --skill pancreas-specialist scan.jpg
+  python scripts/process_skill.py --skill pancreas-specialist scan.jpg
 
   # Directory
-  python cli-tools/process_skill.py --skill compliance-checker input_dir/ --output results/
+  python scripts/process_skill.py --skill compliance-checker input_dir/ --output results/
 
 Supported formats:
   - Text: .txt, .md

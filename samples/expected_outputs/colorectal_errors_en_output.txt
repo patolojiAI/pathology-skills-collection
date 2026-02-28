@@ -1,0 +1,127 @@
+# Expected Output: colorectal_errors_en.txt
+
+═══════════════════════════════════════════════════════════════
+PATHOLOGY REPORT COMPLIANCE CHECK
+═══════════════════════════════════════════════════════════════
+
+REPORT TYPE: Colorectal Carcinoma - Low Anterior Resection
+GUIDELINES: CAP + ICCR
+DATE CHECKED: [DATE]
+
+───────────────────────────────────────────────────────────────
+COMPLIANCE SCORE
+───────────────────────────────────────────────────────────────
+SCORE: 55/100
+STATUS: 🔴 INCOMPLETE - CRITICAL
+
+Gap Summary:
+  🔴 Critical: 3 elements (cross-validation errors)
+  🟠 Major: 0 elements
+  🟡 Minor: 1 element
+
+Field Status:
+  ⬜ Missing fields: 1
+  ⬚ Empty fields: 0
+
+───────────────────────────────────────────────────────────────
+CRITICAL ERRORS (Severity: 🔴)
+───────────────────────────────────────────────────────────────
+1. ❌ CRM STATUS ERROR
+   - Reported: Negative, 0.8 mm
+   - Correct: POSITIVE (≤1 mm per ICCR definition)
+   - Impact: R status should be R1, affects adjuvant therapy decisions
+   - Action Required: Amend report to reflect positive CRM
+
+2. ❌ pN CATEGORY ERROR
+   - Reported: pN0
+   - Positive nodes in report: 2
+   - Correct: pN1a (1-2 regional nodes positive)
+   - Impact: Understaging affects treatment planning
+   - Action Required: Correct pN category to pN1a
+
+3. ❌ STAGE GROUP ERROR
+   - Reported: Stage I
+   - Correct: Stage IIIA (pT3 N1a M0)
+   - Note: Even if pN0 were correct, pT3 N0 = Stage IIA, not Stage I
+   - Impact: Significant understaging
+   - Action Required: Correct stage group
+
+───────────────────────────────────────────────────────────────
+MINOR GAPS (Severity: 🟡)
+───────────────────────────────────────────────────────────────
+1. Tumor deposits
+   - Status: Not explicitly stated (though "None" implied)
+   - Recommendation: Add explicit statement
+
+───────────────────────────────────────────────────────────────
+PRESENT ELEMENTS (Verified ✓)
+───────────────────────────────────────────────────────────────
+✓ Histologic Type: Adenocarcinoma
+✓ Histologic Grade: G2
+✓ Tumor Size: 5.2 cm
+✓ Depth of Invasion: Through muscularis propria into mesorectal fat
+✓ Proximal Margin: Negative
+✓ Distal Margin: Negative, 4 cm
+✓ Mesorectal Integrity: Complete
+✓ Lymphovascular Invasion: Present
+✓ Perineural Invasion: Present
+✓ Lymph Nodes: 15 examined (adequate ≥12)
+✓ MMR Status: Intact
+
+───────────────────────────────────────────────────────────────
+CROSS-VALIDATION RESULTS
+───────────────────────────────────────────────────────────────
+❌ ERROR: CRM 0.8 mm stated as negative (ICCR: ≤1 mm = positive)
+❌ ERROR: pN0 with 2 positive nodes (should be pN1a)
+❌ ERROR: Stage I impossible for pT3 (minimum Stage IIA)
+⚠️ WARNING: R status should be R1 based on positive CRM
+
+Calculated Correct Staging:
+  pT3 (correct as reported)
+  pN1a (2 positive nodes)
+  Stage IIIA (pT3 N1a M0)
+
+───────────────────────────────────────────────────────────────
+RECOMMENDED ACTIONS
+───────────────────────────────────────────────────────────────
+1. URGENT: Issue amended report with corrected staging
+2. Correct CRM status to POSITIVE
+3. Correct pN0 to pN1a
+4. Correct Stage I to Stage IIIA
+5. Add R1 classification
+6. Notify clinical team of staging correction
+
+───────────────────────────────────────────────────────────────
+AMENDMENT TEMPLATE
+───────────────────────────────────────────────────────────────
+AMENDED REPORT
+
+Original Report Date: [DATE]
+Amendment Date: [DATE]
+Reason: Correction of pathologic staging
+
+CORRECTIONS:
+
+1. Circumferential Resection Margin:
+   Original: Negative, 0.8 mm
+   Corrected: POSITIVE (0.8 mm, ≤1 mm per ICCR)
+
+2. pN Category:
+   Original: pN0
+   Corrected: pN1a (2/15 nodes positive)
+
+3. R Classification:
+   Original: Not stated
+   Corrected: R1 (microscopic residual disease)
+
+4. Stage Group:
+   Original: Stage I
+   Corrected: Stage IIIA
+
+RATIONALE:
+Per ICCR colorectal dataset, circumferential margin ≤1 mm is 
+considered positive. Two positive lymph nodes = pN1a. 
+pT3 N1a M0 = Stage IIIA (AJCC 8th edition).
+
+All other findings remain unchanged.
+═══════════════════════════════════════════════════════════════

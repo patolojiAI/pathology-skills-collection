@@ -37,38 +37,38 @@ claude "Validate this colorectal report using compliance-checker" < examples/tex
 
 ```bash
 # Batch process multiple reports
-python cli-tools/process_skill.py --skill compliance-checker examples/excel/batch_reports.xlsx --output results/
+python scripts/process_skill.py --skill compliance-checker examples/excel/batch_reports.xlsx --output results/
 
 # Process with specific skill
-python cli-tools/process_skill.py --skill breast-specialist examples/excel/batch_reports.xlsx --output results/
+python scripts/process_skill.py --skill breast-specialist examples/excel/batch_reports.xlsx --output results/
 ```
 
 ### Excel Structured (`.xlsx` - field-value pairs)
 
 ```bash
 # Process single structured report
-python cli-tools/process_skill.py --skill breast-specialist examples/excel/structured_breast.xlsx --output results/
+python scripts/process_skill.py --skill breast-specialist examples/excel/structured_breast.xlsx --output results/
 ```
 
 ### CSV Batch (`.csv`)
 
 ```bash
 # Process CSV batch
-python cli-tools/process_skill.py --skill colorectal-specialist examples/csv/batch_reports.csv --output results/
+python scripts/process_skill.py --skill colorectal-specialist examples/csv/batch_reports.csv --output results/
 ```
 
 ### PDF Files (requires vision API or pypdf)
 
 ```bash
 # Process PDF report
-python cli-tools/process_skill.py --skill pancreas-specialist examples/pdf/pancreas_report.pdf --output results/
+python scripts/process_skill.py --skill pancreas-specialist examples/pdf/pancreas_report.pdf --output results/
 ```
 
 ### Images (requires vision API)
 
 ```bash
 # Process scanned report image
-python cli-tools/process_skill.py --skill gastric-specialist examples/images/gastric_scan.jpg --output results/
+python scripts/process_skill.py --skill gastric-specialist examples/images/gastric_scan.jpg --output results/
 ```
 
 ## 📝 Sample Report Types

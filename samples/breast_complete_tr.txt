@@ -1,0 +1,80 @@
+# Örnek: Meme - Tam Rapor
+# Beklenen Sonuç: UYUMLU (Skor 100)
+# Dil: Türkçe
+
+CERRAHİ PATOLOJİ RAPORU
+
+Hasta: [ANONİM]
+Protokol No: SP-2024-12347
+
+MATERYAL: Sol meme, lumpektomi ve sentinel lenf nodu biyopsisi
+
+KLİNİK BİLGİ: 55 yaşında kadın hasta, sol memede 1.8 cm kitle. Tru-cut biyopside invaziv duktal karsinom saptanmış.
+
+MAKROSKOPİK İNCELEME:
+"Sol meme lumpektomi" etiketli, oryante edilmiş meme dokusu, 5.5 x 4.8 x 3.2 cm boyutlarında. Kısa sütür superior, uzun sütür lateral yönü işaretliyor. Boyama: superior - mavi, inferior - yeşil, medial - kırmızı, lateral - turuncu, anterior - sarı, posterior - siyah.
+
+Seri kesitlerde santral yerleşimli, sert, beyaz-gri renkli, spiküler kenarlı tümör izlendi. Tümör boyutu: 1.8 x 1.5 x 1.4 cm.
+
+Cerrahi sınırlara uzaklık:
+- Anterior: 0.5 cm
+- Posterior: 0.8 cm
+- Superior: 1.0 cm
+- Inferior: 1.2 cm
+- Medial: 0.4 cm (en yakın)
+- Lateral: 1.5 cm
+
+Sentinel lenf nodları: Ayrı kapta, 2 adet lenf nodu, 1.2 ve 0.9 cm.
+
+MİKROSKOPİK İNCELEME VE TANI:
+
+SOL MEME, LUMPEKTOMİ:
+- İnvaziv karsinom, özel tip belirtilmemiş (invaziv duktal karsinom)
+
+HİSTOLOJİK TİP: İnvaziv karsinom, özel tip belirtilmemiş
+
+HİSTOLOJİK DERECE: Grade 2 (Nottingham skoru 6/9)
+- Tübül formasyonu: Skor 2
+- Nükleer pleomorfizm: Skor 2
+- Mitoz sayısı: Skor 2 (7 mitoz/10 BBA)
+
+TÜMÖR BOYUTU: 1.8 cm (en büyük çap)
+
+TÜMÖR ODAK SAYISI: Tek odak (unifokal)
+
+CERRAHİ SINIRLAR:
+- Tüm cerrahi sınırlar tümörsüz
+- En yakın sınır: Medial, 4 mm
+
+LENFOVASKÜLİR İNVAZYON (LVİ): Mevcut
+
+PERİNÖRAL İNVAZYON (PNİ): Saptanmadı
+
+DUCTAl KARSİNOM İN SİTU (DKİS):
+- Mevcut, solid ve kribriform patern
+- Nükleer derece: Orta
+- Nekroz: Yok
+
+LENF NODLARI:
+- Sentinel lenf nodları: 1/2 pozitif (makrometastaz)
+- En büyük metastaz boyutu: 3.5 mm
+- Ekstranodal yayılım: Yok
+
+PATOLOJİK EVRELEME (AJCC 8. Edisyon):
+- pT1c: Tümör >1 cm fakat ≤2 cm
+- pN1a: 1-3 aksiller lenf nodunda metastaz
+- pM: Uygulanamaz
+
+EVRE GRUBU: IIA
+
+BİYOBELİRTEÇLER:
+- Östrojen Reseptörü (ER): Pozitif, %90, güçlü boyanma
+- Progesteron Reseptörü (PR): Pozitif, %75, orta-güçlü boyanma
+- HER2/neu: Negatif (İHK skoru 1+)
+- Ki-67 proliferasyon indeksi: %18
+
+YORUM: Hasta tümör konseyinde değerlendirilmiştir.
+
+Dr. [İSİM]
+Uzm. Dr., Patoloji
+[TARİH]

@@ -119,19 +119,19 @@ echo $ANTHROPIC_API_KEY
 
 ```bash
 # Single Excel file
-python cli-tools/process_skill.py \
+python scripts/process_skill.py \
   --skill colorectal-pathology-specialist \
   reports.xlsx \
   --output results/
 
 # Directory of PDFs
-python cli-tools/process_skill.py \
+python scripts/process_skill.py \
   --skill compliance-checker \
   pdf_reports/ \
   --output results/
 
 # Single PDF
-python cli-tools/process_skill.py \
+python scripts/process_skill.py \
   --skill breast-pathology-specialist \
   report.pdf \
   --output results/

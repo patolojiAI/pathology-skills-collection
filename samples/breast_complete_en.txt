@@ -1,0 +1,89 @@
+# Sample: Breast - Complete Report
+# Expected Result: COMPLIANT (Score 100)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+MRN: [ANONYMIZED]
+DOB: [ANONYMIZED]
+Accession: SP-2024-12345
+
+SPECIMEN: Left breast, lumpectomy with sentinel lymph node biopsy
+
+CLINICAL HISTORY: 58-year-old female with left breast mass, 2.1 cm on imaging. Core biopsy showed invasive ductal carcinoma, ER positive.
+
+GROSS DESCRIPTION:
+Received fresh for intraoperative consultation, labeled "left breast lumpectomy," is an oriented breast specimen measuring 6.5 x 5.2 x 3.8 cm. The specimen is oriented with a short suture marking superior and a long suture marking lateral. The specimen is inked as follows: superior - blue, inferior - green, medial - red, lateral - orange, anterior - yellow, posterior - black.
+
+Serial sectioning reveals a firm, stellate, tan-white tumor measuring 2.3 x 2.0 x 1.8 cm, located in the central portion of the specimen. The tumor is located:
+- 0.8 cm from the anterior margin
+- 1.2 cm from the posterior margin
+- 1.5 cm from the superior margin
+- 2.0 cm from the inferior margin
+- 0.3 cm from the medial margin (closest)
+- 1.8 cm from the lateral margin
+
+No satellite lesions identified. Background breast tissue shows fibrocystic changes.
+
+Sentinel lymph nodes: Received separately, labeled "left axillary sentinel lymph nodes," are three lymph nodes measuring 1.5, 1.2, and 0.8 cm. All submitted for frozen section and permanent sections.
+
+DIAGNOSIS:
+
+LEFT BREAST, LUMPECTOMY:
+- Invasive carcinoma of no special type (invasive ductal carcinoma)
+
+HISTOLOGIC TYPE: Invasive carcinoma of no special type (ductal), NOS
+
+HISTOLOGIC GRADE: Grade 2 (Nottingham score 6/9)
+- Tubule formation: Score 2 (10-75% tubule formation)
+- Nuclear pleomorphism: Score 2 (moderate variation)
+- Mitotic count: Score 2 (8 mitoses per 10 HPF)
+
+TUMOR SIZE:
+- Greatest dimension: 2.3 cm
+- Additional dimensions: 2.0 x 1.8 cm
+
+TUMOR FOCALITY: Unifocal
+
+MARGINS:
+- All margins negative for invasive carcinoma and DCIS
+- Closest margin: Medial, 3 mm (invasive carcinoma)
+
+LYMPHOVASCULAR INVASION: Present
+
+PERINEURAL INVASION: Not identified
+
+DCIS COMPONENT:
+- Present, solid and cribriform patterns
+- Nuclear grade: Intermediate
+- Necrosis: Absent
+- Extent: 15% of tumor volume
+
+LYMPH NODES:
+- Sentinel lymph nodes: 2 of 3 positive for macrometastases
+- Size of largest metastasis: 4.2 mm
+- Extranodal extension: Not identified
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT2: Tumor >2 cm but ≤5 cm
+- pN1a: Metastases in 1-3 axillary lymph nodes
+- pM: Not applicable (no distant metastasis submitted)
+
+STAGE GROUP: IIB
+
+ADDITIONAL FINDINGS:
+- Fibrocystic changes in background breast tissue
+- No evidence of Paget disease of nipple (not submitted)
+
+BIOMARKER STUDIES (performed on core biopsy, confirmed on resection):
+- Estrogen Receptor (ER): Positive, 95% of tumor cells, strong intensity
+- Progesterone Receptor (PR): Positive, 80% of tumor cells, moderate to strong intensity
+- HER2/neu: Negative (IHC score 1+)
+- Ki-67 proliferation index: 25%
+
+COMMENT: This case was reviewed at multidisciplinary tumor board on [DATE].
+
+Electronically signed by:
+[PATHOLOGIST NAME], MD
+[DATE/TIME]
