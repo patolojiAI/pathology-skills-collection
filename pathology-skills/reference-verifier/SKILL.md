@@ -225,7 +225,45 @@ Comprehensive markdown report organized as follows:
 [Details on references that could not be verified]
 ```
 
-Copy all outputs to `/mnt/user-data/outputs/` and use `present_files`.
+### Where to write the files
+
+Write both outputs to the user's **current working directory** (not
+`/mnt/user-data/outputs/` — that path only exists in the Claude.ai web
+sandbox and will not work in local CLI installs).
+
+- `reference_audit_report.md` — the markdown report shown above
+- `verified_references.bib` — the cleaned BibTeX
+
+If the input manuscript file is named e.g. `paper.pdf`, prefix the outputs
+with the manuscript stem: `paper_audit.md` and `paper_refs.bib`. Otherwise
+fall back to the generic names.
+
+### Optional: HTML report
+
+If the user asks for HTML (phrases like "as html", "html report", "open in
+browser"), also produce `<stem>_audit.html` next to the markdown. Use the
+first method that works:
+
+1. **pandoc** (preferred):
+   ```bash
+   pandoc <stem>_audit.md -o <stem>_audit.html --standalone --metadata title="Reference Audit"
+   ```
+2. **Python `markdown` library** (fallback — `pip install --break-system-packages markdown`):
+   ```bash
+   python3 -c "import markdown; h=markdown.markdown(open('<stem>_audit.md').read(),extensions=['tables','fenced_code']); print('<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Reference Audit</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:2em auto;padding:0 1em;line-height:1.5}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:6px 10px}code{background:#f4f4f4;padding:2px 4px}</style></head><body>'+h+'</body></html>')" > <stem>_audit.html
+   ```
+
+### After writing
+
+In the chat reply, output:
+- A one-line summary (e.g. "Saved audit → `paper_audit.md`, `paper_refs.bib`")
+- The absolute path of every file written
+- The Executive Summary block from the report (counts only)
+- Highlight any **critical** issues (NOT_FOUND / CITATION_MISLEADING /
+  METADATA_MAJOR_ERRORS / RETRACTED)
+
+Do **not** dump the full per-reference detail into chat after writing —
+point the user at the file.
 
 ---
 

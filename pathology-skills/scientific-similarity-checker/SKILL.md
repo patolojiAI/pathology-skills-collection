@@ -196,7 +196,8 @@ Trigger when ANY of the following:
 
 ## Phase 5 — Report Format
 
-Always produce a structured report. Use this exact template:
+Always produce a structured report AND write it to a file (see Phase 6).
+Use this exact template:
 
 ```
 # Scientific Similarity Analysis Report
@@ -260,6 +261,56 @@ program? Any unusual patterns in the publication record?]
 - [Suggested searches the user could run manually]
 - [Links to databases for manual review if needed]
 ```
+
+---
+
+## Phase 6 — Write the Report to a File
+
+After composing the report, **always save it as a file** in the user's
+current working directory (do not just print it to chat).
+
+### Filename
+
+Build a slug from the first author's last name + year + 4-word title stub,
+lowercased, ASCII-only, spaces/punctuation replaced with `-`. Example:
+`smith-2024-deep-learning-glioma-similarity.md`.
+
+If metadata is missing, fall back to `similarity-report-YYYYMMDD-HHMM.md`
+using the current timestamp.
+
+### Default output: Markdown
+
+Write the full report template (the block above, with all sections filled in)
+to `<slug>.md` in the current directory. Use the `write` / file-creation tool
+available in the host; do not require `/mnt/user-data/outputs/` — that path is
+specific to the Claude.ai web sandbox and will not exist for local CLI users.
+
+### Optional: HTML
+
+If the user asks for HTML (phrases like "as html", "html report", "open in
+browser"), also produce `<slug>.html`. Use the first method that works:
+
+1. **pandoc** (preferred — best rendering):
+   ```bash
+   pandoc <slug>.md -o <slug>.html --standalone --metadata title="Similarity Report"
+   ```
+2. **Python `markdown` library** (fallback):
+   ```bash
+   python3 -c "import markdown,sys; html=markdown.markdown(open('<slug>.md').read(), extensions=['tables','fenced_code']); print('<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Similarity Report</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:2em auto;padding:0 1em;line-height:1.5}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:6px 10px}code{background:#f4f4f4;padding:2px 4px}</style></head><body>'+html+'</body></html>')" > <slug>.html
+   ```
+   Install with `pip install --break-system-packages markdown` if missing.
+3. **Plain wrap** (last resort): wrap the markdown in a `<pre>` block inside
+   a minimal HTML skeleton.
+
+### After writing
+
+In the chat reply, output:
+- A one-line summary (e.g. "Saved similarity report → `<slug>.md`")
+- The absolute path of every file written
+- The top-level Misconduct Assessment verdict (🔴 / 🟡 / 🟢 / ℹ️)
+
+Do **not** dump the full report contents into chat after writing the file —
+just point at it. The user opens the file when they want to read it.
 
 ---
 
