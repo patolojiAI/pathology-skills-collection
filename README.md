@@ -56,44 +56,46 @@ pip install -r requirements.txt
 
 ## Installation
 
-### Option 1: Community Marketplace (Coming Soon - Auto-Listed After 5⭐)
+Pick the option that matches how your colleagues use Claude.
 
-Once listed on [Claude Marketplaces](https://claudemarketplaces.com/) (after getting 5+ GitHub stars):
+### Option 1: Plugin Marketplace — Recommended for Claude Code users
 
-1. Browse to https://claudemarketplaces.com/
-2. Search for "pathology-skills-collection"
-3. Install all 10 skills directly from the marketplace
+Works in **Claude Code** (terminal CLI, VS Code extension, or JetBrains plugin).
+No cloning, no scripts, two slash commands inside a Claude Code session:
 
-**Note:** Automatic discovery happens within 24 hours after getting 5+ stars!
+```text
+/plugin marketplace add sbalci/pathology-skills-collection
+/plugin install pathology-skills@pathology-skills-collection
+```
 
-### Option 2: Quick Install (Available Now)
+That installs all 13 skills at once. To update later: `/plugin update`.
+
+### Option 2: Clone + install.sh — for Claude Code users who prefer scripts
 
 ```bash
-# Clone repository
 git clone https://github.com/sbalci/pathology-skills-collection.git
 cd pathology-skills-collection
-
-# Run installer
 ./install.sh
 
 # Test
 claude "What stage is pT2 N0 M0 for breast using tnm-stage-calculator"
 ```
 
-### Option 3: Manual Install
+Symlinks all 13 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
 
-```bash
-# Clone repository
-git clone https://github.com/sbalci/pathology-skills-collection.git
-cd pathology-skills-collection
+### Option 3: Claude.ai App (browser / desktop) — for colleagues who don't use the CLI
 
-# Individual skill symlinks (see install.sh for details)
-mkdir -p ~/.claude/skills
-# Run install.sh or create symlinks manually
+The desktop and web Claude app doesn't support `/plugin install` yet, but you can
+get the same behavior by setting up one **Project per skill**. Walkthrough in
+[**docs/CLAUDE_APP_SETUP.md**](docs/CLAUDE_APP_SETUP.md) — 5 minutes per skill, no
+terminal required.
 
-# Test
-claude "List available pathology skills"
-```
+### Option 4: Community Marketplace (auto-discovery after 5⭐)
+
+Once this repo reaches 5+ GitHub stars it's auto-listed on
+[claudemarketplaces.com](https://claudemarketplaces.com/) within 24 hours, which
+gives a browse-and-install UI. The two-line `/plugin marketplace add ...` in
+Option 1 works **right now** without waiting.
 
 ---
 
@@ -182,6 +184,7 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 ## Documentation
 
 - **[Getting Started Guide](docs/getting-started.md)** - Installation and setup
+- **[Claude App Setup (browser/desktop)](docs/CLAUDE_APP_SETUP.md)** - 5-min recipe for colleagues who don't use the CLI
 - **[Quick Reference](docs/QUICK_REFERENCE.md)** - 1-page trigger phrases and reference card
 - **[Features](docs/FEATURES.md)** - Full feature documentation
 - **[Workflow Guide](docs/WORKFLOW.md)** - Step-by-step compliance workflow
