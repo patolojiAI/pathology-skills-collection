@@ -130,3 +130,4 @@ kolektomi_listesi*.xlsx
 *_anonym.xlsx
 evaluate_*.py
 *_compliance_report.xlsx
+dist/
