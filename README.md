@@ -1,13 +1,13 @@
 # Pathology Skills Collection
 
-**Comprehensive clinical pathology toolkit for Claude** - 10 specialized skills for surgical pathology quality assurance, template generation, staging, coding, and clinical workflow optimization.
+**Comprehensive clinical pathology toolkit for Claude** - 12 specialized skills for surgical pathology quality assurance, template generation, staging, coding, clinical workflow optimization, and research integrity.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/stargazers)
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue)
-![Skills](https://img.shields.io/badge/skills-10-blue)
+![Version](https://img.shields.io/badge/version-1.2.0-blue)
+![Skills](https://img.shields.io/badge/skills-12-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
@@ -15,7 +15,7 @@
 
 ## What This Provides
 
-A modular collection of Claude skills for clinical pathologists and QA teams:
+A modular collection of Claude skills for clinical pathologists, QA teams, and researchers:
 
 - ✅ **Compliance checking** against CAP and ICCR guidelines
 - 📋 **Synoptic template generation** with optional pre-fill
@@ -23,6 +23,8 @@ A modular collection of Claude skills for clinical pathologists and QA teams:
 - 🏥 **SNOMED CT / ICD-O-3 coding** suggestions
 - 📊 **Tumor board summaries** for MDT meetings
 - 🔄 **Free-text to synoptic conversion** for legacy reports
+- 🔍 **Scientific similarity checking** for academic integrity / plagiarism screening
+- 📚 **Reference verification** (4-level citation auditor) for manuscripts
 
 ---
 
@@ -166,6 +168,13 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 | **colorectal-pathology-specialist** | Colorectal carcinoma | `claude "Check colorectal report using colorectal-pathology-specialist" < report.txt` |
 | **pancreas-pathology-specialist** | Pancreatic carcinoma | `claude "Check pancreas report using pancreas-pathology-specialist" < report.txt` |
 | **gastric-pathology-specialist** | Gastric carcinoma | `claude "Check gastric report using gastric-pathology-specialist" < report.txt` |
+
+### Research Integrity Skills
+
+| Skill | Purpose | Usage |
+|-------|---------|-------|
+| **scientific-similarity-checker** | Multi-database literature/plagiarism scan (PubMed, OpenAlex, Semantic Scholar, arXiv, Crossref, web) with tiered misconduct warnings | `claude "Check this paper for similar work using scientific-similarity-checker" < paper.pdf` |
+| **reference-verifier** | 4-level citation audit: existence, metadata accuracy, topical relevance, contextual correctness | `claude "Audit references in this manuscript using reference-verifier" < manuscript.pdf` |
 
 ---
 

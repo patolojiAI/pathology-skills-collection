@@ -30,6 +30,8 @@ skills=(
     "pathology-coder:pathology-coder"
     "tumor-board-summary:pathology-tumor-board-summary"
     "report-converter:report-converter"
+    "scientific-similarity-checker:scientific-similarity-checker"
+    "reference-verifier:reference-verifier"
 )
 
 for skill_mapping in "${skills[@]}"; do
@@ -58,7 +60,7 @@ echo "✓ Installation Complete!"
 echo "============================================"
 echo ""
 echo "Installed skills:"
-ls -1 "$CLAUDE_SKILLS_DIR" | grep -E "pathology|tnm|report-converter" || echo "  (none found)"
+ls -1 "$CLAUDE_SKILLS_DIR" | grep -E "pathology|tnm|report-converter|scientific-similarity-checker|reference-verifier" || echo "  (none found)"
 echo ""
 echo "Test installation:"
 echo "  claude 'List available skills'"
