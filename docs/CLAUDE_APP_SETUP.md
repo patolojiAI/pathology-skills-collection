@@ -3,11 +3,34 @@
 For colleagues who use **claude.ai** in a browser or the **Claude desktop app** —
 not the Claude Code CLI. No terminal, no git, no admin rights needed.
 
-The desktop and web Claude app does not yet support installing Claude Code skills
-directly. The reliable workaround is to set up one **Claude Project** per skill
-you want, paste the skill instructions into the Project, and attach any reference
-files. From then on, conversations inside that Project get the skill's full
-behavior.
+## 🟢 Recommended: upload the `.skill` file (~30 seconds per skill)
+
+Each GitHub release publishes a standalone `.skill` bundle for every skill —
+the relevant shared references are inlined, so each file works on its own.
+
+1. Open the latest release:
+   **https://github.com/sbalci/pathology-skills-collection/releases/latest**
+2. Download the `.skill` file(s) you want from the **Assets** section.
+3. In claude.ai, open **Settings → Capabilities → Skills → Upload skill** and
+   select the downloaded file. Repeat for each skill you want.
+
+That's it — the skill is now active in any conversation. To update later,
+download the newer release's `.skill` and re-upload.
+
+> If your account doesn't show **Settings → Capabilities → Skills** yet, fall
+> back to the Projects walkthrough below.
+
+---
+
+## 🟡 Fallback: paste SKILL.md into a Claude Project (~5 minutes per skill)
+
+Use this only if the **Settings → Capabilities → Skills** upload option above
+isn't available in your account.
+
+The reliable workaround is to set up one **Claude Project** per skill, paste the
+skill instructions into the Project's custom instructions, and attach any
+reference files. From then on, conversations inside that Project get the
+skill's full behavior.
 
 This takes about **5 minutes per skill**.
 

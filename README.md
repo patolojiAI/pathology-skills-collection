@@ -83,12 +83,24 @@ claude "What stage is pT2 N0 M0 for breast using tnm-stage-calculator"
 
 Symlinks all 13 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
 
-### Option 3: Claude.ai App (browser / desktop) — for colleagues who don't use the CLI
+### Option 3: Claude.ai App (browser / desktop) — upload `.skill` files
 
-The desktop and web Claude app doesn't support `/plugin install` yet, but you can
-get the same behavior by setting up one **Project per skill**. Walkthrough in
-[**docs/CLAUDE_APP_SETUP.md**](docs/CLAUDE_APP_SETUP.md) — 5 minutes per skill, no
-terminal required.
+Each release publishes a standalone `.skill` file for every skill (self-contained
+zip, no shared dependencies). Upload one through the Claude.ai web app or the
+Claude desktop app:
+
+1. Open the latest release: **[Releases page](https://github.com/sbalci/pathology-skills-collection/releases/latest)**
+2. Download the `.skill` file(s) you want from the **Assets** section.
+3. In claude.ai, open **Settings → Capabilities → Skills → Upload skill** and
+   select the downloaded file. Repeat for each skill.
+
+No terminal, no git, no admin rights needed. Updates: download the new
+release's `.skill` file and re-upload.
+
+> **Older alternative (still works):** the [Claude.ai Project setup](docs/CLAUDE_APP_SETUP.md)
+> walkthrough — paste SKILL.md into a Project's custom instructions. Use this
+> if your account doesn't yet have the **Settings → Capabilities → Skills**
+> upload UI.
 
 ### Option 4: Community Marketplace (auto-discovery after 5⭐)
 
