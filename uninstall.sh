@@ -22,6 +22,7 @@ skills=(
     "report-converter"
     "scientific-similarity-checker"
     "reference-verifier"
+    "statistical-methods-reviewer"
 )
 
 removed=0

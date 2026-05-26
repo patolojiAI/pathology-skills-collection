@@ -1,13 +1,13 @@
 # Pathology Skills Collection
 
-**Comprehensive clinical pathology toolkit for Claude** - 12 specialized skills for surgical pathology quality assurance, template generation, staging, coding, clinical workflow optimization, and research integrity.
+**Comprehensive clinical pathology toolkit for Claude** - 13 specialized skills for surgical pathology quality assurance, template generation, staging, coding, clinical workflow optimization, and research integrity.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/stargazers)
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue)
-![Skills](https://img.shields.io/badge/skills-12-blue)
+![Version](https://img.shields.io/badge/version-1.3.0-blue)
+![Skills](https://img.shields.io/badge/skills-13-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
@@ -175,6 +175,7 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 |-------|---------|-------|
 | **scientific-similarity-checker** | Multi-database literature/plagiarism scan (PubMed, OpenAlex, Semantic Scholar, arXiv, Crossref, web) with tiered misconduct warnings | `claude "Check this paper for similar work using scientific-similarity-checker" < paper.pdf` |
 | **reference-verifier** | 4-level citation audit: existence, metadata accuracy, topical relevance, contextual correctness | `claude "Audit references in this manuscript using reference-verifier" < manuscript.pdf` |
+| **statistical-methods-reviewer** | Critical review of statistical methods with 9-aspect scoring rubric (0–18), red-flag detection, and concrete alternatives | `claude "Review the stats in this paper using statistical-methods-reviewer" < paper.pdf` |
 
 ---
 
