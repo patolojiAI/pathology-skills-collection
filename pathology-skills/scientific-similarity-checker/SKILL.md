@@ -1,16 +1,10 @@
 ---
 name: scientific-similarity-checker
-description: >
-  Analyze a scientific article (PDF, image, or text) to find similar work across PubMed,
-  OpenAlex, Semantic Scholar, IEEE, arXiv, Crossref, and the web. Detects similarity by
-  content/abstract, topic, authors, and journal. Issues tiered warnings when similarity
-  levels suggest potential self-plagiarism, duplicate publication, or research misconduct.
-  Use this skill whenever a user uploads or pastes a scientific article, manuscript, preprint,
-  or abstract and asks to find related work, check for overlap, detect plagiarism, validate
-  originality, perform a literature review, or investigate a paper's context. Also triggers for
-  phrases like "check this paper", "find similar studies", "is this published elsewhere",
-  "duplicate publication check", "misconduct screening", "novelty check", or "find the authors'
-  other work". Always use this skill when academic integrity checking is implied, even implicitly.
+description: Analyze a scientific article (.pdf, .docx, image, or text) to find similar work across PubMed, OpenAlex, Semantic Scholar, IEEE, arXiv, Crossref, and the web. Detects similarity by abstract content, topic, authors, and journal. Issues tiered warnings (red/amber/green) when similarity levels suggest self-plagiarism, duplicate publication, salami slicing, or research misconduct. Saves a structured report as markdown (and optionally HTML) in the current working directory. Use whenever a user uploads or pastes a scientific article, manuscript, preprint, or abstract and asks to "check this paper", "find similar studies", "is this published elsewhere", "duplicate publication check", "misconduct screening", "novelty check", "plagiarism screen", or "find the authors' other work" — including when academic integrity checking is implied.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Scientific Similarity Checker

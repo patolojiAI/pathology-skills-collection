@@ -1,6 +1,10 @@
 ---
 name: breast-pathology-specialist
-description: Comprehensive breast cancer pathology analysis including CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th), biomarker reporting (ER/PR/HER2/Ki-67), tumor board summaries, and SNOMED coding for invasive breast carcinoma specimens.
+description: Comprehensive breast cancer pathology workflow combining CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th edition), biomarker reporting (ER/PR/HER2/Ki-67) per ASCO/CAP guidelines, tumor board summaries, and SNOMED coding for invasive breast carcinoma. Use when the user uploads or pastes a breast pathology report (mastectomy, lumpectomy, wide local excision, sentinel/axillary lymph node biopsy) and asks to "check breast report", "validate breast pathology", "stage this breast cancer", "interpret ER/PR/HER2", "generate breast template", or any breast-cancer-specific pathology task. Supports .pdf, .docx, .txt input in English and Turkish.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Breast Pathology Specialist

@@ -15,10 +15,10 @@ Comprehensive documentation for all 10 skills in the pathology skills collection
 6. [Report Converter](#6-report-converter)
 
 ### Specialist All-in-One Skills
-7. [Breast Specialist](#7-breast-specialist)
-8. [Colorectal Specialist](#8-colorectal-specialist)
-9. [Pancreas Specialist](#9-pancreas-specialist)
-10. [Gastric Specialist](#10-gastric-specialist)
+7. [Breast Specialist](#7-breast-pathology-specialist)
+8. [Colorectal Specialist](#8-colorectal-pathology-specialist)
+9. [Pancreas Specialist](#9-pancreas-pathology-specialist)
+10. [Gastric Specialist](#10-gastric-pathology-specialist)
 
 ---
 
@@ -103,9 +103,9 @@ RECOMMENDATIONS:
 - Additional findings
 
 ### Related Skills
-- Use **template-generator** to fill missing elements
+- Use **pathology-template-generator** to fill missing elements
 - Use **tnm-stage-calculator** to verify staging
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific compliance
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific compliance
 
 ---
 
@@ -142,17 +142,17 @@ Generate blank or pre-filled CAP-style synoptic report templates for surgical pa
 
 **Blank template:**
 ```bash
-claude "Generate a blank breast lumpectomy template using template-generator"
+claude "Generate a blank breast lumpectomy template using pathology-template-generator"
 ```
 
 **Pre-filled template:**
 ```bash
-claude "Generate breast lumpectomy template for 2.3cm Grade 2 invasive ductal carcinoma using template-generator"
+claude "Generate breast lumpectomy template for 2.3cm Grade 2 invasive ductal carcinoma using pathology-template-generator"
 ```
 
 **Turkish template:**
 ```bash
-claude "Türkçe kolon rezeksiyon şablonu oluştur using template-generator"
+claude "Türkçe kolon rezeksiyon şablonu oluştur using pathology-template-generator"
 ```
 
 ### Auto-Fill Examples
@@ -188,8 +188,8 @@ SPECIMEN
 ```
 
 ### Related Skills
-- Use **compliance-checker** to validate completed template
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific templates
+- Use **pathology-compliance-checker** to validate completed template
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific templates
 
 ---
 
@@ -271,8 +271,8 @@ Treatment Implications:
 **Colorectal, Pancreas, Gastric:** See skill documentation for complete tables.
 
 ### Related Skills
-- Use **compliance-checker** to validate pTNM in reports
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific staging
+- Use **pathology-compliance-checker** to validate pTNM in reports
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific staging
 
 ---
 
@@ -360,8 +360,8 @@ Biomarkers:
 - Diffuse type: SNOMED 413103002, ICD-O-3 8145/3
 
 ### Related Skills
-- Use **compliance-checker** to verify all codeable elements are present
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific codes
+- Use **pathology-compliance-checker** to verify all codeable elements are present
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific codes
 
 ---
 
@@ -395,13 +395,13 @@ Generate concise 3-5 line tumor board summaries from surgical pathology reports 
 
 **Generate summary:**
 ```bash
-claude "Generate tumor board summary from this report using tumor-board-summary" < report.txt
+claude "Generate tumor board summary from this report using pathology-tumor-board-summary" < report.txt
 ```
 
 **Batch summaries for MDT:**
 ```bash
 for case in mdt_cases/*.txt; do
-  claude "Generate tumor board summary using tumor-board-summary" < "$case"
+  claude "Generate tumor board summary using pathology-tumor-board-summary" < "$case"
 done > mdt_summaries.txt
 ```
 
@@ -450,9 +450,9 @@ Line 5: Resection: R[X]. [Treatment implications]
 ```
 
 ### Related Skills
-- Use **compliance-checker** before generating summary (ensure completeness)
+- Use **pathology-compliance-checker** before generating summary (ensure completeness)
 - Use **tnm-stage-calculator** to verify staging in summary
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific summaries
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific summaries
 
 ---
 
@@ -540,9 +540,9 @@ January 18, 2026
 ```
 
 ### Related Skills
-- Use **compliance-checker** after conversion to validate quality
-- Use **template-generator** to fill gaps in converted reports
-- Use **breast/colorectal/pancreas/gastric-specialist** for tumor-specific conversion
+- Use **pathology-compliance-checker** after conversion to validate quality
+- Use **pathology-template-generator** to fill gaps in converted reports
+- Use **breast/colorectal/pancreas/gastric-pathology-specialist** for tumor-specific conversion
 
 ---
 
@@ -550,7 +550,7 @@ January 18, 2026
 
 ## 7. Breast Specialist
 
-**Skill name:** `pathology-breast-specialist`
+**Skill name:** `breast-pathology-specialist`
 
 ### Purpose
 Comprehensive breast cancer pathology toolkit combining all features focused exclusively on invasive breast carcinoma.
@@ -591,16 +591,16 @@ Comprehensive breast cancer pathology toolkit combining all features focused exc
 **Complete breast workflow:**
 ```bash
 # Check compliance
-claude "Check this breast lumpectomy report using breast-specialist" < report.txt
+claude "Check this breast lumpectomy report using breast-pathology-specialist" < report.txt
 
 # Generate template
-claude "Generate breast lumpectomy template for 2.3cm Grade 2 IDC using breast-specialist"
+claude "Generate breast lumpectomy template for 2.3cm Grade 2 IDC using breast-pathology-specialist"
 
 # Calculate staging
-claude "Stage pT2 N1a M0 breast cancer using breast-specialist"
+claude "Stage pT2 N1a M0 breast cancer using breast-pathology-specialist"
 
 # Create summary
-claude "Generate breast tumor board summary using breast-specialist" < report.txt
+claude "Generate breast tumor board summary using breast-pathology-specialist" < report.txt
 ```
 
 ### Advantages Over Core Skills
@@ -611,13 +611,13 @@ claude "Generate breast tumor board summary using breast-specialist" < report.tx
 
 ### Related Skills
 - Use **tnm-stage-calculator** for quick staging-only lookups
-- Use **compliance-checker** if checking mixed tumor types
+- Use **pathology-compliance-checker** if checking mixed tumor types
 
 ---
 
 ## 8. Colorectal Specialist
 
-**Skill name:** `pathology-colorectal-specialist`
+**Skill name:** `colorectal-pathology-specialist`
 
 ### Purpose
 Comprehensive colorectal cancer pathology toolkit combining all features focused exclusively on colorectal carcinoma.
@@ -660,16 +660,16 @@ Comprehensive colorectal cancer pathology toolkit combining all features focused
 **Complete colorectal workflow:**
 ```bash
 # Check compliance with CRM assessment
-claude "Check this rectal LAR report using colorectal-specialist" < report.txt
+claude "Check this rectal LAR report using colorectal-pathology-specialist" < report.txt
 
 # Generate rectal template
-claude "Generate rectal LAR template using colorectal-specialist"
+claude "Generate rectal LAR template using colorectal-pathology-specialist"
 
 # MSI/MMR interpretation
-claude "Interpret MMR IHC: Loss of MLH1/PMS2 using colorectal-specialist"
+claude "Interpret MMR IHC: Loss of MLH1/PMS2 using colorectal-pathology-specialist"
 
 # Stage with node adequacy check
-claude "Stage pT3 N1b M0 with 10 nodes examined using colorectal-specialist"
+claude "Stage pT3 N1b M0 with 10 nodes examined using colorectal-pathology-specialist"
 ```
 
 ### Advantages Over Core Skills
@@ -680,13 +680,13 @@ claude "Stage pT3 N1b M0 with 10 nodes examined using colorectal-specialist"
 
 ### Related Skills
 - Use **tnm-stage-calculator** for quick staging-only lookups
-- Use **compliance-checker** if checking mixed tumor types
+- Use **pathology-compliance-checker** if checking mixed tumor types
 
 ---
 
 ## 9. Pancreas Specialist
 
-**Skill name:** `pathology-pancreas-specialist`
+**Skill name:** `pancreas-pathology-specialist`
 
 ### Purpose
 Comprehensive pancreatic cancer pathology toolkit combining all features focused exclusively on exocrine pancreas carcinoma.
@@ -725,16 +725,16 @@ Comprehensive pancreatic cancer pathology toolkit combining all features focused
 **Complete pancreas workflow:**
 ```bash
 # Check all 7 Whipple margins
-claude "Check this Whipple report for all margins using pancreas-specialist" < report.txt
+claude "Check this Whipple report for all margins using pancreas-pathology-specialist" < report.txt
 
 # Generate Whipple template
-claude "Generate Whipple template using pancreas-specialist"
+claude "Generate Whipple template using pancreas-pathology-specialist"
 
 # Assess margin status
-claude "Evaluate margins: posterior 1.5mm, superior 2mm, others >5mm using pancreas-specialist"
+claude "Evaluate margins: posterior 1.5mm, superior 2mm, others >5mm using pancreas-pathology-specialist"
 
 # Calculate LNR
-claude "Calculate lymph node ratio: 3 positive out of 18 examined using pancreas-specialist"
+claude "Calculate lymph node ratio: 3 positive out of 18 examined using pancreas-pathology-specialist"
 ```
 
 ### Advantages Over Core Skills
@@ -746,13 +746,13 @@ claude "Calculate lymph node ratio: 3 positive out of 18 examined using pancreas
 
 ### Related Skills
 - Use **tnm-stage-calculator** for quick staging-only lookups
-- Use **compliance-checker** if checking mixed tumor types
+- Use **pathology-compliance-checker** if checking mixed tumor types
 
 ---
 
 ## 10. Gastric Specialist
 
-**Skill name:** `pathology-gastric-specialist`
+**Skill name:** `gastric-pathology-specialist`
 
 ### Purpose
 Comprehensive gastric cancer pathology toolkit combining all features focused exclusively on gastric carcinoma.
@@ -794,19 +794,19 @@ Comprehensive gastric cancer pathology toolkit combining all features focused ex
 **Complete gastric workflow:**
 ```bash
 # Check Lauren classification
-claude "Check this gastric report, ensure Lauren type specified using gastric-specialist" < report.txt
+claude "Check this gastric report, ensure Lauren type specified using gastric-pathology-specialist" < report.txt
 
 # Generate total gastrectomy template
-claude "Generate total gastrectomy template using gastric-specialist"
+claude "Generate total gastrectomy template using gastric-pathology-specialist"
 
 # Classify Lauren type
-claude "Classify this as intestinal, diffuse, or mixed type using gastric-specialist"
+claude "Classify this as intestinal, diffuse, or mixed type using gastric-pathology-specialist"
 
 # HER2 interpretation
-claude "Interpret HER2: IHC 3+ in intestinal type adenocarcinoma using gastric-specialist"
+claude "Interpret HER2: IHC 3+ in intestinal type adenocarcinoma using gastric-pathology-specialist"
 
 # GEJ tumor classification
-claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-specialist"
+claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-pathology-specialist"
 ```
 
 ### Advantages Over Core Skills
@@ -819,7 +819,7 @@ claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-speciali
 
 ### Related Skills
 - Use **tnm-stage-calculator** for quick staging-only lookups
-- Use **compliance-checker** if checking mixed tumor types
+- Use **pathology-compliance-checker** if checking mixed tumor types
 
 ---
 
@@ -827,17 +827,17 @@ claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-speciali
 
 | Need | Core Skill | Specialist Skill | Best Choice |
 |------|-----------|------------------|-------------|
-| **Check breast report** | compliance-checker | breast-specialist | Specialist (biomarker guidance) |
-| **Check colorectal report** | compliance-checker | colorectal-specialist | Specialist (CRM, MSI/MMR) |
-| **Check pancreas report** | compliance-checker | pancreas-specialist | Specialist (7 margins) |
-| **Check gastric report** | compliance-checker | gastric-specialist | Specialist (Lauren, HER2) |
-| **Mixed caseload QA** | compliance-checker | N/A | Core (handles all types) |
-| **Generate any template** | template-generator | Specialist | Either (similar functionality) |
+| **Check breast report** | pathology-compliance-checker | breast-pathology-specialist | Specialist (biomarker guidance) |
+| **Check colorectal report** | pathology-compliance-checker | colorectal-pathology-specialist | Specialist (CRM, MSI/MMR) |
+| **Check pancreas report** | pathology-compliance-checker | pancreas-pathology-specialist | Specialist (7 margins) |
+| **Check gastric report** | pathology-compliance-checker | gastric-pathology-specialist | Specialist (Lauren, HER2) |
+| **Mixed caseload QA** | pathology-compliance-checker | N/A | Core (handles all types) |
+| **Generate any template** | pathology-template-generator | Specialist | Either (similar functionality) |
 | **Quick staging lookup** | tnm-stage-calculator | Specialist | Core (faster, focused) |
 | **SNOMED codes only** | pathology-coder | Specialist | Core (faster, focused) |
-| **Tumor board summaries** | tumor-board-summary | Specialist | Either (similar functionality) |
+| **Tumor board summaries** | pathology-tumor-board-summary | Specialist | Either (similar functionality) |
 | **Convert old reports** | report-converter | N/A | Core (conversion-focused) |
-| **Complete breast workflow** | Multiple core skills | breast-specialist | Specialist (all-in-one) |
+| **Complete breast workflow** | Multiple core skills | breast-pathology-specialist | Specialist (all-in-one) |
 
 ---
 
@@ -845,17 +845,17 @@ claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-speciali
 
 ### Workflow 1: New Report Sign-Out
 ```
-1. Generate template (template-generator or specialist)
+1. Generate template (pathology-template-generator or specialist)
 2. Dictate/fill report
-3. Check compliance (compliance-checker or specialist)
+3. Check compliance (pathology-compliance-checker or specialist)
 4. Calculate stage (tnm-stage-calculator or specialist)
 5. Get codes (pathology-coder or specialist)
-6. Generate summary (tumor-board-summary or specialist)
+6. Generate summary (pathology-tumor-board-summary or specialist)
 ```
 
 ### Workflow 2: Department QA
 ```
-1. Batch check reports (compliance-checker)
+1. Batch check reports (pathology-compliance-checker)
 2. Export scores to Excel
 3. Identify common gaps
 4. Generate improvement recommendations
@@ -864,9 +864,9 @@ claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-speciali
 
 ### Workflow 3: Resident Training
 ```
-1. Show blank template (template-generator)
+1. Show blank template (pathology-template-generator)
 2. Have resident fill from case
-3. Check completeness (compliance-checker)
+3. Check completeness (pathology-compliance-checker)
 4. Teach staging (tnm-stage-calculator)
 5. Introduce coding (pathology-coder)
 ```
@@ -877,16 +877,16 @@ claude "Tumor 3cm from GEJ, classify using Siewert system using gastric-speciali
 
 | Skill | Size | Speed | Complexity | Token Usage |
 |-------|------|-------|------------|-------------|
-| compliance-checker | ~18 KB | Fast | Medium | ~5K tokens |
-| template-generator | ~25 KB | Fast | Low | ~3K tokens |
+| pathology-compliance-checker | ~18 KB | Fast | Medium | ~5K tokens |
+| pathology-template-generator | ~25 KB | Fast | Low | ~3K tokens |
 | tnm-stage-calculator | ~12 KB | Very Fast | Low | ~2K tokens |
 | pathology-coder | ~8 KB | Very Fast | Low | ~2K tokens |
-| tumor-board-summary | ~5 KB | Very Fast | Low | ~1K tokens |
+| pathology-tumor-board-summary | ~5 KB | Very Fast | Low | ~1K tokens |
 | report-converter | ~12 KB | Medium | High | ~8K tokens |
-| breast-specialist | ~20 KB | Medium | Medium | ~7K tokens |
-| colorectal-specialist | ~22 KB | Medium | Medium | ~7K tokens |
-| pancreas-specialist | ~21 KB | Medium | Medium | ~7K tokens |
-| gastric-specialist | ~23 KB | Medium | Medium | ~7K tokens |
+| breast-pathology-specialist | ~20 KB | Medium | Medium | ~7K tokens |
+| colorectal-pathology-specialist | ~22 KB | Medium | Medium | ~7K tokens |
+| pancreas-pathology-specialist | ~21 KB | Medium | Medium | ~7K tokens |
+| gastric-pathology-specialist | ~23 KB | Medium | Medium | ~7K tokens |
 
 ---
 

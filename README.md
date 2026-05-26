@@ -111,10 +111,10 @@ claude "Check this breast report using breast-pathology-specialist" < report.txt
 claude "What stage is pT3 N1b M0 for colorectal using tnm-stage-calculator"
 
 # Template generation
-claude "Generate blank Whipple template using template-generator"
+claude "Generate blank Whipple template using pathology-template-generator"
 
 # Tumor board summary
-claude "Create tumor board summary using tumor-board-summary" < report.txt
+claude "Create tumor board summary using pathology-tumor-board-summary" < report.txt
 
 # SNOMED coding
 claude "SNOMED code for invasive ductal carcinoma grade 2 using pathology-coder"
@@ -129,7 +129,7 @@ claude "SNOMED code for invasive ductal carcinoma grade 2 using pathology-coder"
 claude "Read reports.xlsx and use breast-pathology-specialist to analyze each report. Provide compliance scores and export results to Excel."
 
 # Process all reports in a directory
-claude "Analyze all .txt files in reports_dir/ using compliance-checker and create summary Excel."
+claude "Analyze all .txt files in reports_dir/ using pathology-compliance-checker and create summary Excel."
 
 # Use the helper script
 ./batch_process_cli.sh reports.xlsx colorectal-pathology-specialist results/
@@ -155,11 +155,11 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 
 | Skill | Purpose | Usage |
 |-------|---------|-------|
-| **compliance-checker** | CAP/ICCR validation with scoring | `claude "Check report using compliance-checker" < report.txt` |
-| **template-generator** | Blank or pre-filled synoptic templates | `claude "Generate breast lumpectomy template using template-generator"` |
+| **pathology-compliance-checker** | CAP/ICCR validation with scoring | `claude "Check report using pathology-compliance-checker" < report.txt` |
+| **pathology-template-generator** | Blank or pre-filled synoptic templates | `claude "Generate breast lumpectomy template using pathology-template-generator"` |
 | **tnm-stage-calculator** | AJCC 8th edition staging | `claude "Stage pT2 N1 M0 breast using tnm-stage-calculator"` |
 | **pathology-coder** | SNOMED CT / ICD-O-3 codes | `claude "SNOMED code for adenocarcinoma using pathology-coder"` |
-| **tumor-board-summary** | 3-5 line MDT summaries | `claude "Tumor board summary using tumor-board-summary" < report.txt` |
+| **pathology-tumor-board-summary** | 3-5 line MDT summaries | `claude "Tumor board summary using pathology-tumor-board-summary" < report.txt` |
 | **report-converter** | Free-text to synoptic conversion | `claude "Convert to synoptic using report-converter" < narrative.txt` |
 
 ### Specialist Skills (All-in-One by Tumor Type)

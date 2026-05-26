@@ -38,7 +38,7 @@ This is the **recommended workflow** for:
 claude "Read reports.xlsx and use colorectal-pathology-specialist to analyze each report. Export results to Excel with compliance scores."
 
 # Process all files in directory
-claude "Analyze all .txt files in reports_dir/ using compliance-checker and export to summary.xlsx"
+claude "Analyze all .txt files in reports_dir/ using pathology-compliance-checker and export to summary.xlsx"
 
 # Use helper script
 ./batch_process_cli.sh reports.xlsx breast-pathology-specialist results/
@@ -54,7 +54,7 @@ claude "Analyze all .txt files in reports_dir/ using compliance-checker and expo
 Only if you DON'T have Claude CLI:
 ```bash
 export ANTHROPIC_API_KEY="sk-ant-..."
-python scripts/process_skill.py --skill compliance-checker reports.xlsx
+python scripts/process_skill.py --skill pathology-compliance-checker reports.xlsx
 ```
 
 **See [BATCH_PROCESSING.md](BATCH_PROCESSING.md) for complete guide.**
@@ -178,10 +178,10 @@ claude skills list
 # - pathology-coder
 # - pathology-tumor-board-summary
 # - pathology-report-converter
-# - pathology-breast-specialist
-# - pathology-colorectal-specialist
-# - pathology-pancreas-specialist
-# - pathology-gastric-specialist
+# - breast-pathology-specialist
+# - colorectal-pathology-specialist
+# - pancreas-pathology-specialist
+# - gastric-pathology-specialist
 ```
 
 ---
@@ -520,7 +520,7 @@ Create `~/.claude/pathology-skills-config.json`:
 
 ```json
 {
-  "default_skill": "compliance-checker",
+  "default_skill": "pathology-compliance-checker",
   "compliance_threshold": 90,
   "auto_suggest_staging": true,
   "preferred_language": "en",
@@ -550,7 +550,7 @@ For processing **many reports** (50+), choose based on your needs:
 # Process all reports in a directory
 for report in /path/to/reports/*.txt; do
   echo "Processing $(basename $report)..."
-  claude "Check CAP compliance using compliance-checker" < "$report" \
+  claude "Check CAP compliance using pathology-compliance-checker" < "$report" \
     > "results/$(basename $report .txt)_analysis.txt"
 done
 
@@ -632,7 +632,7 @@ Error: No skills found
 
 3. **Check YAML frontmatter:**
    ```bash
-   head -n 5 ~/.claude/skills/pathology-skills-collection/pathology-skills/compliance-checker/SKILL.md
+   head -n 5 ~/.claude/skills/pathology-skills-collection/pathology-skills/pathology-compliance-checker/SKILL.md
    # Should show:
    # ---
    # name: pathology-compliance-checker
@@ -666,8 +666,8 @@ Error: Invalid template
    ```bash
    # Skills should be at same level as shared-references
    ~/.claude/skills/pathology-skills-collection/pathology-skills/
-   ├── compliance-checker/
-   ├── template-generator/
+   ├── pathology-compliance-checker/
+   ├── pathology-template-generator/
    └── ...
    ~/.claude/skills/pathology-skills-collection/shared-references/
    ├── staging/

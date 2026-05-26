@@ -276,7 +276,7 @@ feat(breast-pathology-specialist): Add HER2 FISH reporting
 
 docs(README): Update installation instructions
 
-fix(compliance-checker): Correct pT3 validation for gastric
+fix(pathology-compliance-checker): Correct pT3 validation for gastric
 
 refactor(file_readers): Improve PDF extraction logic
 ```

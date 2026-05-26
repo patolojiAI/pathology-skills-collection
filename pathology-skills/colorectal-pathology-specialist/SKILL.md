@@ -1,6 +1,10 @@
 ---
 name: colorectal-pathology-specialist
-description: Comprehensive colorectal cancer pathology analysis including CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th), MSI/MMR testing interpretation, mesorectal excision quality assessment, tumor board summaries, and SNOMED coding for colon and rectal carcinoma specimens.
+description: Comprehensive colorectal cancer pathology workflow combining CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th edition), MSI/MMR testing interpretation, mesorectal excision quality (MERCURY) grading, tumor board summaries, and SNOMED coding. Use when the user uploads or pastes a colorectal pathology report (colectomy, low anterior resection, abdominoperineal resection, polypectomy) and asks to "check colorectal report", "validate CAP ColoRectal protocol", "stage this colorectal cancer", "interpret MSI/MMR", "assess TME quality", or any colorectal-cancer-specific pathology task. Supports .pdf, .docx, .txt input in English and Turkish.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Colorectal Pathology Specialist

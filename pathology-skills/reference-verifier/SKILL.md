@@ -1,6 +1,10 @@
 ---
 name: reference-verifier
-description: Comprehensive academic reference auditor that performs four levels of verification on citations in uploaded manuscripts. Level 1 checks if references actually exist. Level 2 verifies metadata accuracy (authors, year, journal, volume, pages). Level 3 checks whether the cited paper actually covers the topic it is cited for. Level 4 analyzes whether each citation is used correctly in context — confirming if the cited source truly supports, contradicts, or is neutral toward the claim being made. Use this skill whenever the user uploads a manuscript, paper, or document and asks to check, verify, validate, or audit references, citations, or bibliography. Also trigger when user asks to generate a .bib file, detect fake or hallucinated references, check citation accuracy, verify citation context, or audit a reference list. Especially tuned for biomedical/PubMed-indexed literature but works for any discipline. Even if the user only asks for basic reference checking, always offer the full 4-level audit.
+description: Comprehensive academic reference auditor that performs four levels of verification on citations in uploaded manuscripts (.pdf, .docx). Level 1 checks if references actually exist. Level 2 verifies metadata accuracy (authors, year, journal, volume, pages). Level 3 checks whether the cited paper actually covers the topic it is cited for. Level 4 analyzes whether each citation is used correctly in context — confirming if the cited source truly supports, contradicts, or is neutral toward the claim being made. Saves a BibTeX file (.bib) and a markdown audit report (HTML optional) in the current working directory. Use whenever the user uploads a manuscript and asks to check, verify, validate, or audit references, citations, or bibliography, generate a .bib file, detect fake or hallucinated references, check citation accuracy, verify citation context, or audit a reference list. Especially tuned for biomedical/PubMed-indexed literature but works for any discipline.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Reference Verifier & Citation Auditor

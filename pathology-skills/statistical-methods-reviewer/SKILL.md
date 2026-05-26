@@ -1,16 +1,10 @@
 ---
 name: statistical-methods-reviewer
-description: >
-  Critically review the statistical methods used in a research article (PDF, DOCX, PPTX,
-  HTML, text). Extract every test and model the authors used, judge whether each is
-  appropriate for the study design and data, and evaluate assumption checks, multiplicity
-  control, sample-size justification, effect-size reporting, model specification, missing
-  data handling, validation/calibration, and reproducibility. Produces a scored rubric
-  (0–2 across 9 aspects, total 0–18), a red-flag list, and concrete recommendations for
-  better statistical tests where appropriate. Saves the review as a markdown file (and
-  optionally HTML) in the current working directory. Use whenever the user supplies a
-  research article and asks to "review the stats", "check the statistical methods",
-  "audit the analysis", "are these tests correct", or any variant of statistical critique.
+description: Critically review the statistical methods used in a research article (.pdf, .docx, .pptx, .html, .txt). Extract every test and model the authors used, judge whether each is appropriate for the study design and data, and evaluate assumption checks, multiplicity control, sample-size justification, effect-size reporting, model specification, missing-data handling, validation/calibration, and reproducibility. Produces a scored rubric (0-2 across 9 aspects, total 0-18), a red-flag list, and concrete recommendations for better statistical tests where appropriate. Saves the review as a markdown file (and optionally HTML) in the current working directory. Use when the user supplies a research article and asks to "review the stats", "check the statistical methods", "audit the analysis", "are these tests correct", "score this paper's statistics", or any variant of statistical critique.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Statistical Methods Reviewer

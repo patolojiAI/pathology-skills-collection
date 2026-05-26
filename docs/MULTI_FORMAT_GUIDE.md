@@ -242,7 +242,7 @@ python scripts/process_skill.py --skill SKILL_NAME INPUT_PATH [OPTIONS]
 - `pathology-compliance-checker` - Multi-tumor CAP/ICCR compliance
 - `pathology-template-generator` - Synoptic template generation
 - `tnm-stage-calculator` - TNM staging calculator
-- `tumor-board-summary` - Tumor board summary generator
+- `pathology-tumor-board-summary` - Tumor board summary generator
 - `pathology-coder` - SNOMED/ICD-O-3 coding
 - `report-converter` - Free-text to synoptic converter
 

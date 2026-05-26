@@ -1,6 +1,10 @@
 ---
 name: pancreas-pathology-specialist
-description: Comprehensive pancreatic cancer pathology analysis including CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th), Whipple specimen dissection guidance, margin assessment, tumor board summaries, and SNOMED coding for exocrine pancreas carcinoma specimens.
+description: Comprehensive pancreatic cancer pathology workflow combining CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th edition for exocrine pancreas), Whipple/distal-pancreatectomy specimen dissection guidance, axial slicing and margin assessment (SMA, SMV, posterior, anterior, pancreatic neck, bile duct), tumor board summaries, and SNOMED coding. Use when the user uploads or pastes a pancreatic pathology report (Whipple, distal pancreatectomy, total pancreatectomy, pancreatic biopsy) and asks to "check pancreas report", "validate CAP Panc.Exo protocol", "stage this pancreatic cancer", "assess Whipple margins", or any pancreatic-cancer-specific pathology task. Supports .pdf, .docx, .txt input in English and Turkish.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Pancreatic Pathology Specialist

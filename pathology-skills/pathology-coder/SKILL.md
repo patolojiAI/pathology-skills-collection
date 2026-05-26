@@ -1,6 +1,10 @@
 ---
 name: pathology-coder
-description: Suggests SNOMED CT and ICD-O-3 codes for pathology diagnoses, procedures, and biomarkers with hierarchical relationships. Supports common cancer diagnoses and pathology procedures.
+description: Suggests SNOMED CT and ICD-O-3 morphology/topography codes for pathology diagnoses, procedures, and biomarkers, with hierarchical parent/child relationships and synonyms. Use when the user asks "SNOMED code for [diagnosis]", "ICD-O-3 code for [tumor type]", "what's the code for invasive ductal carcinoma", "code this diagnosis", "morphology code for", or any pathology-coding lookup. Supports common cancer diagnoses (breast, colorectal, pancreas, gastric, prostate, lung, lymphoma, GIST) and standard pathology procedures.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Pathology Coder

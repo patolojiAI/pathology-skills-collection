@@ -66,7 +66,7 @@ cp /lis/export/week_of_2026_01_13/*.txt input/
 # Process all reports in one conversation - LLM analyzes each
 claude "I have 50 pathology reports in ~/pathology-qa/input/ directory (text files).
 
-Use compliance-checker skill to analyze each report with full LLM intelligence:
+Use pathology-compliance-checker skill to analyze each report with full LLM intelligence:
 - Check CAP/ICCR compliance
 - Calculate scores
 - Identify missing elements
@@ -1004,13 +1004,13 @@ claude "Does mesorectal excision quality matter after neoadjuvant therapy using 
 
 | Use Case | Primary Skills Used | Frequency | Automation Level |
 |----------|-------------------|-----------|------------------|
-| Department QA | compliance-checker | Weekly | High (batch scripts) |
-| Resident Training | template-generator, tnm-stage-calculator | Daily | Low (interactive) |
+| Department QA | pathology-compliance-checker | Weekly | High (batch scripts) |
+| Resident Training | pathology-template-generator, tnm-stage-calculator | Daily | Low (interactive) |
 | LIS Integration | pathology-coder, tnm-stage-calculator | Per case | High (API hooks) |
-| Tumor Board | tumor-board-summary | Weekly | High (batch scripts) |
+| Tumor Board | pathology-tumor-board-summary | Weekly | High (batch scripts) |
 | Legacy Migration | report-converter | One-time project | Medium (semi-automated) |
-| Breast Center | breast-specialist | Daily | Medium (templates + checks) |
-| GI Fellowship | colorectal/pancreas/gastric-specialist | Rotation | Low (learning tool) |
+| Breast Center | breast-pathology-specialist | Daily | Medium (templates + checks) |
+| GI Fellowship | colorectal/pancreas/gastric-pathology-specialist | Rotation | Low (learning tool) |
 | Post-Neoadjuvant | Specialist skills | Per case | Low (complex assessment) |
 
 ---

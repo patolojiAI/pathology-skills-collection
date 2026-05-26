@@ -126,7 +126,7 @@ python scripts/process_skill.py \
 
 # Directory of PDFs
 python scripts/process_skill.py \
-  --skill compliance-checker \
+  --skill pathology-compliance-checker \
   pdf_reports/ \
   --output results/
 
@@ -310,7 +310,7 @@ results/
 claude "Write a Python script to check compliance"
 
 # ✅ Right
-claude "Use compliance-checker skill to analyze these reports"
+claude "Use pathology-compliance-checker skill to analyze these reports"
 ```
 
 ### "API key not found" error with Python script

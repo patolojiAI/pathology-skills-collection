@@ -1,6 +1,9 @@
 #!/bin/bash
 # Pathology Skills Collection - Installer
-# Installs individual skills to ~/.claude/skills/
+# Installs individual skills to ~/.claude/skills/ as symlinks.
+#
+# Folder name and SKILL.md `name:` field are identical for every skill, so
+# the installer simply mirrors each folder under ~/.claude/skills/.
 
 set -e
 
@@ -12,56 +15,51 @@ echo "Pathology Skills Collection - Installer"
 echo "============================================"
 echo ""
 
-# Create Claude skills directory if it doesn't exist
 mkdir -p "$CLAUDE_SKILLS_DIR"
 
 echo "Installing skills to $CLAUDE_SKILLS_DIR..."
 echo ""
 
-# Install each skill with proper naming (matches SKILL.md name field)
 skills=(
-    "colorectal-specialist:colorectal-pathology-specialist"
-    "breast-specialist:breast-pathology-specialist"
-    "pancreas-specialist:pancreas-pathology-specialist"
-    "gastric-specialist:gastric-pathology-specialist"
-    "compliance-checker:pathology-compliance-checker"
-    "tnm-stage-calculator:tnm-stage-calculator"
-    "template-generator:pathology-template-generator"
-    "pathology-coder:pathology-coder"
-    "tumor-board-summary:pathology-tumor-board-summary"
-    "report-converter:report-converter"
-    "scientific-similarity-checker:scientific-similarity-checker"
-    "reference-verifier:reference-verifier"
-    "statistical-methods-reviewer:statistical-methods-reviewer"
+    "breast-pathology-specialist"
+    "colorectal-pathology-specialist"
+    "gastric-pathology-specialist"
+    "pancreas-pathology-specialist"
+    "pathology-compliance-checker"
+    "pathology-template-generator"
+    "pathology-tumor-board-summary"
+    "pathology-coder"
+    "tnm-stage-calculator"
+    "report-converter"
+    "scientific-similarity-checker"
+    "reference-verifier"
+    "statistical-methods-reviewer"
 )
 
-for skill_mapping in "${skills[@]}"; do
-    IFS=':' read -r folder_name skill_name <<< "$skill_mapping"
-    source_path="$SKILLS_DIR/$folder_name"
-    target_path="$CLAUDE_SKILLS_DIR/$skill_name"
+for skill in "${skills[@]}"; do
+    source_path="$SKILLS_DIR/$skill"
+    target_path="$CLAUDE_SKILLS_DIR/$skill"
 
-    # Remove existing symlink if present
     if [ -L "$target_path" ]; then
-        echo "  Removing old: $skill_name"
+        echo "  Replacing existing symlink: $skill"
         rm "$target_path"
+    elif [ -e "$target_path" ]; then
+        echo "  ✗ Skipping $skill (target exists and is not a symlink)"
+        continue
     fi
 
-    # Create symlink
     if [ -d "$source_path" ]; then
         ln -s "$source_path" "$target_path"
-        echo "  ✓ Installed: $skill_name"
+        echo "  ✓ Installed: $skill"
     else
-        echo "  ✗ Not found: $folder_name (skipping)"
+        echo "  ✗ Source not found: $source_path (skipping)"
     fi
 done
 
 echo ""
 echo "============================================"
-echo "✓ Installation Complete!"
+echo "✓ Installation Complete (${#skills[@]} skills)"
 echo "============================================"
-echo ""
-echo "Installed skills:"
-ls -1 "$CLAUDE_SKILLS_DIR" | grep -E "pathology|tnm|report-converter|scientific-similarity-checker|reference-verifier|statistical-methods-reviewer" || echo "  (none found)"
 echo ""
 echo "Test installation:"
 echo "  claude 'List available skills'"

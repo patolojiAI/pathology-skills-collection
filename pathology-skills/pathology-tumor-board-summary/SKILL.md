@@ -1,6 +1,10 @@
 ---
-name: tumor-board-summary
-description: Generates concise 3-5 line tumor board summaries from pathology reports with key clinical elements (diagnosis, TNM stage, margins, nodes, biomarkers). For MDT meetings and oncology consults.
+name: pathology-tumor-board-summary
+description: Generates concise 3-5 line tumor board summaries from full pathology reports, extracting the diagnosis, TNM stage, margins, lymph node status, key biomarkers, and risk factors that drive MDT decisions. Use when the user pastes or uploads a pathology report (.pdf, .docx, .txt) and asks to "create a tumor board summary", "MDT summary", "oncology consult summary", "3-line summary for the MDT", or "summarize for tumor board".
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Tumor Board Summary Generator

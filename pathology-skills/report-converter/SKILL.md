@@ -1,6 +1,10 @@
 ---
 name: report-converter
-description: Converts free-text narrative pathology reports to CAP synoptic format and generates amendments/addenda for existing reports. Extracts diagnostic elements and maps to structured CAP data elements.
+description: Converts free-text narrative pathology reports into structured CAP synoptic format and generates amendments/addenda/corrections for previously-issued reports. Use when the user uploads or pastes a narrative pathology report (.pdf, .docx, .txt) and asks to "convert to synoptic", "convert to CAP format", "structure this report", "make this synoptic", "generate an amendment", "add an addendum", or "issue a corrected report". Extracts diagnostic elements (tumor type, grade, size, stage, margins, nodes, biomarkers) and maps them to CAP data elements.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Report Converter

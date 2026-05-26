@@ -1,6 +1,10 @@
 ---
-name: compliance-checker
-description: Validates surgical pathology cancer reports against CAP and ICCR guidelines with severity-based compliance scoring and pT/pN cross-validation. Supports breast, colorectal, pancreas, and gastric carcinoma in English and Turkish.
+name: pathology-compliance-checker
+description: Validates surgical pathology cancer reports against CAP (College of American Pathologists) and ICCR (International Collaboration on Cancer Reporting) guidelines with severity-based compliance scoring (0-100) and automatic pT/pN/margin cross-validation. Use whenever the user pastes or uploads a pathology report (.pdf, .docx, .txt) and asks to "check compliance", "validate against CAP", "score this report", "audit this synoptic", "find missing elements", or "verify pT/pN consistency". Supports breast, colorectal, pancreas, and gastric carcinoma in English and Turkish.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Compliance Checker

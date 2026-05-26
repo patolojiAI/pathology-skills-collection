@@ -1,6 +1,10 @@
 ---
-name: template-generator
-description: Generates blank or pre-filled CAP-compliant synoptic pathology report templates with all required elements. Supports breast, colorectal, pancreas, and gastric carcinoma in English and Turkish.
+name: pathology-template-generator
+description: Generates blank or pre-filled CAP-compliant synoptic pathology report templates with every required data element listed. Use when the user asks to "generate a synoptic template", "create a CAP report skeleton", "give me a blank breast lumpectomy template", "Whipple specimen template", "pre-fill template with these findings", or any variant of synoptic template creation. Supports breast, colorectal, pancreas, and gastric carcinoma in English and Turkish (.txt, .md output).
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Template Generator

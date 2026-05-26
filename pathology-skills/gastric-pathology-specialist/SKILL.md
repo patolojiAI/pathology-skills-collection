@@ -1,6 +1,10 @@
 ---
 name: gastric-pathology-specialist
-description: Comprehensive gastric cancer pathology analysis including CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th), Lauren classification, WHO histologic typing, HER2 testing interpretation, tumor board summaries, and SNOMED coding for gastric carcinoma specimens.
+description: Comprehensive gastric cancer pathology workflow combining CAP/ICCR compliance validation, synoptic template generation, TNM staging (AJCC 8th edition), Lauren classification (intestinal/diffuse/mixed), WHO histologic typing, HER2 testing interpretation per ASCO/CAP, MSI/MMR status, tumor board summaries, and SNOMED coding. Use when the user uploads or pastes a gastric pathology report (total/subtotal gastrectomy, esophagogastrectomy, endoscopic submucosal dissection) and asks to "check gastric report", "validate CAP Stomach protocol", "stage this gastric cancer", "interpret Lauren classification", "interpret HER2 IHC/FISH", or any gastric-cancer-specific pathology task. Supports .pdf, .docx, .txt input in English and Turkish.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # Gastric Pathology Specialist

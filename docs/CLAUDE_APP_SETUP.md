@@ -34,7 +34,7 @@ This takes about **5 minutes per skill**.
 ### 2. Copy the skill instructions into the Project
 
 1. Open the skill's `SKILL.md` file on GitHub:
-   **https://github.com/sbalci/pathology-skills-collection/blob/master/pathology-skills/breast-specialist/SKILL.md**
+   **https://github.com/sbalci/pathology-skills-collection/blob/master/pathology-skills/breast-pathology-specialist/SKILL.md**
 2. Click the **Raw** button (top right of the file view) to get plain text.
 3. Select all (`Ctrl+A` / `Cmd+A`), copy.
 4. Back in your Claude Project, click **Set custom instructions** (sometimes
@@ -50,8 +50,8 @@ The breast specialist references several files. From the GitHub repo, download
 or copy-paste these into the Project's **Knowledge** panel (drag-and-drop the
 `.md` files, or paste their content as text files):
 
-- `pathology-skills/breast-specialist/references/diagnosis/breast_invasive_carcinoma.md`
-- `pathology-skills/breast-specialist/references/macroscopy/breast_macroscopy.md`
+- `pathology-skills/breast-pathology-specialist/references/diagnosis/breast_invasive_carcinoma.md`
+- `pathology-skills/breast-pathology-specialist/references/macroscopy/breast_macroscopy.md`
 - `shared-references/staging/tnm_stage_calculator.md`
 - `shared-references/templates/synoptic_templates.md`
 - `shared-references/biomarkers/BIOMARKERS_INDEX.md`
@@ -94,9 +94,9 @@ Recommended starter set if you only want to set up a few:
 
 | Project name | SKILL.md path on GitHub | Best for |
 |---|---|---|
-| **Compliance Checker** | `pathology-skills/compliance-checker/SKILL.md` | Generic CAP/ICCR compliance across tumor types |
+| **Compliance Checker** | `pathology-skills/pathology-compliance-checker/SKILL.md` | Generic CAP/ICCR compliance across tumor types |
 | **TNM Stage Calculator** | `pathology-skills/tnm-stage-calculator/SKILL.md` | Quick pT/pN/M → stage lookups (AJCC 8th) |
-| **Tumor Board Summary** | `pathology-skills/tumor-board-summary/SKILL.md` | 3-5 line MDT summaries from full reports |
+| **Tumor Board Summary** | `pathology-skills/pathology-tumor-board-summary/SKILL.md` | 3-5 line MDT summaries from full reports |
 | **Statistical Methods Reviewer** | `pathology-skills/statistical-methods-reviewer/SKILL.md` | Auditing statistics in research papers |
 | **Reference Verifier** | `pathology-skills/reference-verifier/SKILL.md` | 4-level citation audit for manuscripts |
 | **Scientific Similarity Checker** | `pathology-skills/scientific-similarity-checker/SKILL.md` | Plagiarism / duplicate publication screening |

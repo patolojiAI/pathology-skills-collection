@@ -1,6 +1,10 @@
 ---
 name: tnm-stage-calculator
-description: Fast TNM stage group calculation from pT, pN, pM categories using AJCC 8th edition criteria. Supports breast, colorectal, pancreas, and gastric carcinoma. Validates staging consistency.
+description: Fast TNM stage group calculation from pT, pN, pM categories using AJCC 8th edition criteria, with automatic consistency validation. Use when the user asks "what stage is pT2 N1 M0", "calculate TNM stage", "stage group for pT3 N1b breast", "is pT2 N0 M0 stage I or II", "stage this pancreatic cancer", or any pT/pN/pM to stage-group conversion. Supports breast, colorectal, pancreas, and gastric carcinoma. Flags inconsistencies like tumor-size-vs-pT mismatches and node-count-vs-pN mismatches.
+license: MIT
+metadata:
+  version: 1.3.0
+  author: Serdar Balci
 ---
 
 # TNM Stage Calculator
