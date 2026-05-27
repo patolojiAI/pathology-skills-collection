@@ -23,6 +23,7 @@ skills=(
     "scientific-similarity-checker"
     "reference-verifier"
     "statistical-methods-reviewer"
+    "qupath-guide"
 )
 
 removed=0

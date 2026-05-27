@@ -34,6 +34,7 @@ skills=(
     "scientific-similarity-checker"
     "reference-verifier"
     "statistical-methods-reviewer"
+    "qupath-guide"
 )
 
 for skill in "${skills[@]}"; do

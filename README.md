@@ -1,13 +1,13 @@
 # Pathology Skills Collection
 
-**Comprehensive clinical pathology toolkit for Claude** - 13 specialized skills for surgical pathology quality assurance, template generation, staging, coding, clinical workflow optimization, and research integrity.
+**Comprehensive clinical pathology toolkit for Claude** - 14 specialized skills for surgical pathology QA, template generation, staging, coding, clinical workflow optimization, research integrity, and digital-pathology tool guidance.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/sbalci/pathology-skills-collection)](https://github.com/sbalci/pathology-skills-collection/stargazers)
 
-![Version](https://img.shields.io/badge/version-1.3.0-blue)
-![Skills](https://img.shields.io/badge/skills-13-blue)
+![Version](https://img.shields.io/badge/version-1.4.0-blue)
+![Skills](https://img.shields.io/badge/skills-14-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
@@ -25,6 +25,8 @@ A modular collection of Claude skills for clinical pathologists, QA teams, and r
 - 🔄 **Free-text to synoptic conversion** for legacy reports
 - 🔍 **Scientific similarity checking** for academic integrity / plagiarism screening
 - 📚 **Reference verification** (4-level citation auditor) for manuscripts
+- 📐 **Statistical methods review** for research articles (9-aspect rubric)
+- 🔬 **QuPath guidance** for digital-pathology workflows and Groovy scripting
 
 ---
 
@@ -68,7 +70,7 @@ No cloning, no scripts, two slash commands inside a Claude Code session:
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-That installs all 13 skills at once. To update later: `/plugin update`.
+That installs all 14 skills at once. To update later: `/plugin update`.
 
 ### Option 2: Clone + install.sh — for Claude Code users who prefer scripts
 
@@ -81,7 +83,7 @@ cd pathology-skills-collection
 claude "What stage is pT2 N0 M0 for breast using tnm-stage-calculator"
 ```
 
-Symlinks all 13 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
+Symlinks all 14 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
 
 ### Option 3: Claude.ai App (browser / desktop) — upload `.skill` files
 
@@ -163,9 +165,10 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 
 ## Skills
 
-13 skills in three groups: **clinical workflow tools** for daily report QA,
-**all-in-one specialist skills** that handle a tumor type end-to-end, and
-**research-integrity skills** for manuscripts and statistical reviews.
+14 skills in four groups: **clinical workflow tools** for daily report QA,
+**all-in-one specialist skills** that handle a tumor type end-to-end,
+**research-integrity skills** for manuscripts and statistical reviews, and
+**digital-pathology tooling** for software platforms used in practice.
 
 | # | Skill | Group | One-liner |
 |---|---|---|---|
@@ -182,6 +185,7 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 | 11 | [`scientific-similarity-checker`](#11-scientific-similarity-checker) | Research integrity | Multi-DB literature scan + tiered misconduct warnings |
 | 12 | [`reference-verifier`](#12-reference-verifier) | Research integrity | 4-level citation audit (existence → metadata → topic → context) |
 | 13 | [`statistical-methods-reviewer`](#13-statistical-methods-reviewer) | Research integrity | Statistical-methods audit on a 0–18 scored rubric |
+| 14 | [`qupath-guide`](#14-qupath-guide) | Digital pathology tooling | QuPath troubleshooting, workflows, and Groovy scripting |
 
 > All 13 skills auto-detect English and Turkish input. The four tumor specialists
 > share the four core clinical workflows (compliance, staging, templates, summaries)
@@ -433,6 +437,35 @@ TRIPOD / PRISMA / REMARK / ARRIVE compliance when applicable.
 
 ```bash
 claude "Review the stats in this paper using statistical-methods-reviewer" < paper.pdf
+```
+
+---
+
+### Digital pathology tooling
+
+A guidance skill (not a report-processor) that helps you actually drive the
+software platforms used in digital pathology.
+
+#### 14. `qupath-guide`
+
+Expert guidance for **QuPath**, the open-source digital pathology platform
+(qupath.github.io). Covers four pillars: **troubleshooting** (errors, "Run for
+Project does nothing", performance), **UI / navigation** (tools, panels,
+keyboard shortcuts, preferences), **analysis workflows** (cell detection,
+tissue / pixel classification, TMA dearrayer, IHC scoring for Ki-67 / HER2 /
+PD-L1, multiplex / mIF), and **Groovy scripting** (batch processing, custom
+measurements, data export, automation). Adapts depth to the user's level —
+from "new to QuPath" to extension developer. When version-specific details
+matter, fetches official QuPath docs (qupath.readthedocs.io, javadoc,
+forum.image.sc). Targets QuPath 0.5.x and 0.6.x.
+
+- **Triggers:** "QuPath", `.qpproj` / `.qpdata` files, "Run for Project", "stain vectors", "TMA dearrayer", "detection objects", "Brightfield (H-DAB)", "QuPath cell detection", "IHC scoring", "Groovy script for slides", "QuPath error"
+- **Output:** menu paths, step-by-step workflows, ready-to-run Groovy snippets, and links to authoritative docs when the local references don't have enough detail
+- **Use it for:** anything QuPath. **Don't** use it for ImageJ/Fiji-only questions or standalone Python deep-learning (StarDist / Cellpose outside QuPath)
+
+```bash
+claude "Use qupath-guide: my Run for Project script does nothing, no errors"
+claude "Use qupath-guide: walk me through Ki-67 scoring on an IHC slide"
 ```
 
 ---
