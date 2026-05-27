@@ -166,6 +166,17 @@ claude "Check using colorectal-pathology-specialist" < report.txt
 /plugin install breast-pathology-specialist@pathology-skills-collection
 ```
 
+**Updating later:**
+```bash
+/plugin update          # pull the latest version from the marketplace
+/reload-plugins         # apply the update to the current session
+```
+
+`/plugin update` only downloads — it does not activate the new version in
+your current session. Run `/reload-plugins` afterwards to pick up the
+changes (skills, agents, hooks, plugin MCP servers) without restarting
+Claude Code. A new Claude Code session loads updates automatically.
+
 **Verify installation:**
 ```bash
 # List installed skills

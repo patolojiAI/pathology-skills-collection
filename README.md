@@ -70,7 +70,21 @@ No cloning, no scripts, two slash commands inside a Claude Code session:
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-That installs all 14 skills at once. To update later: `/plugin update`.
+That installs all 14 skills at once.
+
+**Updating later:**
+
+```text
+/plugin update          # pull the latest version from the marketplace
+/reload-plugins         # apply the update to the current session
+```
+
+`/plugin update` only downloads — it does **not** activate the new version in
+the current session. Run `/reload-plugins` afterwards to pick up changes to
+skills, agents, hooks, and plugin MCP servers without restarting Claude Code.
+A fresh Claude Code session loads the updated version automatically, so
+`/reload-plugins` is only needed if you want the changes immediately in your
+current session.
 
 ### Option 2: Clone + install.sh — for Claude Code users who prefer scripts
 
