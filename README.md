@@ -105,10 +105,33 @@ Each release publishes a standalone `.skill` file for every skill (self-containe
 zip, no shared dependencies). Upload one through the Claude.ai web app or the
 Claude desktop app:
 
-1. Open the latest release: **[Releases page](https://github.com/sbalci/pathology-skills-collection/releases/latest)**
-2. Download the `.skill` file(s) you want from the **Assets** section.
-3. In claude.ai, open **Settings → Capabilities → Skills → Upload skill** and
+1. Right-click the skill you want in the table below → **Save Link As…** to
+   download the `.skill` file. (Direct-clicking starts the download for some
+   browsers but may try to "open" it for others.)
+2. In claude.ai, open **Settings → Capabilities → Skills → Upload skill** and
    select the downloaded file. Repeat for each skill.
+
+All links point at the **latest release** automatically — they don't need
+updating when a new version is published.
+
+**Download all 14 from the [Releases page](https://github.com/sbalci/pathology-skills-collection/releases/latest)**, or pick individual files:
+
+| # | Skill | Direct download |
+|---|---|---|
+| 1 | `pathology-compliance-checker` | [pathology-compliance-checker.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/pathology-compliance-checker.skill) |
+| 2 | `pathology-template-generator` | [pathology-template-generator.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/pathology-template-generator.skill) |
+| 3 | `tnm-stage-calculator` | [tnm-stage-calculator.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/tnm-stage-calculator.skill) |
+| 4 | `pathology-coder` | [pathology-coder.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/pathology-coder.skill) |
+| 5 | `pathology-tumor-board-summary` | [pathology-tumor-board-summary.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/pathology-tumor-board-summary.skill) |
+| 6 | `report-converter` | [report-converter.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/report-converter.skill) |
+| 7 | `breast-pathology-specialist` | [breast-pathology-specialist.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/breast-pathology-specialist.skill) |
+| 8 | `colorectal-pathology-specialist` | [colorectal-pathology-specialist.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/colorectal-pathology-specialist.skill) |
+| 9 | `pancreas-pathology-specialist` | [pancreas-pathology-specialist.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/pancreas-pathology-specialist.skill) |
+| 10 | `gastric-pathology-specialist` | [gastric-pathology-specialist.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/gastric-pathology-specialist.skill) |
+| 11 | `scientific-similarity-checker` | [scientific-similarity-checker.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/scientific-similarity-checker.skill) |
+| 12 | `reference-verifier` | [reference-verifier.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/reference-verifier.skill) |
+| 13 | `statistical-methods-reviewer` | [statistical-methods-reviewer.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/statistical-methods-reviewer.skill) |
+| 14 | `qupath-guide` | [qupath-guide.skill](https://github.com/sbalci/pathology-skills-collection/releases/latest/download/qupath-guide.skill) |
 
 No terminal, no git, no admin rights needed. Updates: download the new
 release's `.skill` file and re-upload.
