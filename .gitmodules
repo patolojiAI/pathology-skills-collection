@@ -1,0 +1,3 @@
+[submodule "pathology-report-checker-skill"]
+	path = pathology-report-checker-skill
+	url = https://github.com/sbalci/pathology-report-checker-skill.git
