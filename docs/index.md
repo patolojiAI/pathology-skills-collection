@@ -54,7 +54,7 @@ files? See the [installation guide](https://github.com/patolojiAI/pathology-skil
 ## Related
 
 - **Pathology Report Checker** — the standalone QA skill and its ECDP2026 study:
-  [reportskill.patoloji.dev](https://reportskill.patoloji.dev/)
+  [reportskill.patoloji.dev](https://reportskill.patoloji.dev/) — [live demo](https://reportskill.patoloji.app/) · [Hugging Face](https://huggingface.co/spaces/patolojiai/pathology-report-checker-skill)
 - **Issues & Discussions:**
   [GitHub](https://github.com/patolojiAI/pathology-skills-collection/issues)
 

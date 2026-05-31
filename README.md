@@ -11,6 +11,8 @@
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
+🌐 **[pathologyskills.patoloji.dev](https://pathologyskills.patoloji.dev/)** &nbsp;·&nbsp; Related: **[Pathology Report Checker](https://reportskill.patoloji.dev/)** ([live demo](https://reportskill.patoloji.app/) · [Hugging Face](https://huggingface.co/spaces/patolojiai/pathology-report-checker-skill))
+
 ---
 
 ## What This Provides
@@ -557,8 +559,10 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Support
 
+- **Project website**: [pathologyskills.patoloji.dev](https://pathologyskills.patoloji.dev/)
 - **Issues**: [GitHub Issues](https://github.com/patolojiAI/pathology-skills-collection/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/patolojiAI/pathology-skills-collection/discussions)
+- **Related**: [Pathology Report Checker](https://reportskill.patoloji.dev/) — [live demo](https://reportskill.patoloji.app/) · [Hugging Face](https://huggingface.co/spaces/patolojiai/pathology-report-checker-skill)
 
 ---
 
