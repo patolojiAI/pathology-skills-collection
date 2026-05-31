@@ -1,0 +1,9 @@
+# GitHub Pages configuration for the Pathology Skills Collection project site.
+# Served from /docs on the default branch (Settings -> Pages -> Source: /docs).
+title: Pathology Skills Collection
+description: >-
+  14 specialized Claude skills for surgical pathology QA, staging, coding,
+  synoptic reporting, and research integrity — English and Turkish.
+theme: jekyll-theme-cayman
+show_downloads: false
+url: https://pathologyskills.patoloji.dev

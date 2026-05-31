@@ -9,7 +9,7 @@ Each GitHub release publishes a standalone `.skill` bundle for every skill —
 the relevant shared references are inlined, so each file works on its own.
 
 1. Open the latest release:
-   **https://github.com/sbalci/pathology-skills-collection/releases/latest**
+   **https://github.com/patolojiAI/pathology-skills-collection/releases/latest**
 2. Download the `.skill` file(s) you want from the **Assets** section.
 3. In claude.ai, open **Settings → Capabilities → Skills → Upload skill** and
    select the downloaded file. Repeat for each skill you want.
@@ -57,7 +57,7 @@ This takes about **5 minutes per skill**.
 ### 2. Copy the skill instructions into the Project
 
 1. Open the skill's `SKILL.md` file on GitHub:
-   **https://github.com/sbalci/pathology-skills-collection/blob/master/pathology-skills/breast-pathology-specialist/SKILL.md**
+   **https://github.com/patolojiAI/pathology-skills-collection/blob/master/pathology-skills/breast-pathology-specialist/SKILL.md**
 2. Click the **Raw** button (top right of the file view) to get plain text.
 3. Select all (`Ctrl+A` / `Cmd+A`), copy.
 4. Back in your Claude Project, click **Set custom instructions** (sometimes

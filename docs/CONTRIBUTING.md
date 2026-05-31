@@ -354,9 +354,9 @@ Significant contributors may be invited to become maintainers.
 
 ## 📞 Getting Help
 
-- **Questions**: Open a [Discussion](https://github.com/sbalci/pathology-skills-collection/discussions)
-- **Bugs**: Open an [Issue](https://github.com/sbalci/pathology-skills-collection/issues)
-- **Ideas**: Start a [Discussion](https://github.com/sbalci/pathology-skills-collection/discussions)
+- **Questions**: Open a [Discussion](https://github.com/patolojiAI/pathology-skills-collection/discussions)
+- **Bugs**: Open an [Issue](https://github.com/patolojiAI/pathology-skills-collection/issues)
+- **Ideas**: Start a [Discussion](https://github.com/patolojiAI/pathology-skills-collection/discussions)
 - **Urgent**: Email serdarbalci@gmail.com
 
 ---

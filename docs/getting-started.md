@@ -693,7 +693,7 @@ Error: Invalid template
 
    # Clone fresh copy to home directory
    cd ~
-   git clone https://github.com/sbalci/pathology-skills-collection.git
+   git clone https://github.com/patolojiAI/pathology-skills-collection.git
    ln -s ~/pathology-skills-collection ~/.claude/skills/pathology-skills-collection
    ```
 
