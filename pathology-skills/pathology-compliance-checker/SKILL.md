@@ -40,7 +40,6 @@ Reference on-demand (DO NOT load at startup):
 - Tumor-specific: `references/diagnosis/{tumor}_*.md`
 - Tumor-specific macroscopy: `references/macroscopy/{tumor}_macroscopy.md`
 - Cross-validation: `../../shared-references/staging/tnm_stage_calculator.md`
-- Common checks: `../../shared-references/common/cross_validation.md`
 
 ## Usage Examples
 
