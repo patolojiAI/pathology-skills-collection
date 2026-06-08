@@ -1,9 +1,9 @@
 ---
 title: Pathology Skills Collection
-description: 14 specialized Claude skills for surgical pathology QA, staging, coding, synoptic reporting, and research integrity.
+description: 15 specialized Claude skills for surgical pathology QA, staging, coding, synoptic reporting, and research integrity.
 ---
 
-**A modular collection of 14 Claude skills** for clinical pathologists, QA teams,
+**A modular collection of 15 Claude skills** for clinical pathologists, QA teams,
 and researchers — CAP/ICCR compliance checking, synoptic templates, TNM staging,
 SNOMED CT / ICD-O-3 coding, tumor-board summaries, and research-integrity tools —
 in **English and Turkish**.
@@ -21,8 +21,17 @@ in **English and Turkish**.
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-Installs all 14 skills at once. Prefer scripts, or the Claude.ai app with `.skill`
+Installs all 15 skills at once. Prefer scripts, or the Claude.ai app with `.skill`
 files? See the [installation guide](https://github.com/patolojiAI/pathology-skills-collection#installation).
+
+📺 **New to Claude?** This short video walks through installing the Claude
+desktop app and adding a skill:
+
+<div style="max-width:760px; margin:1rem 0;">
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:6px;">
+    <iframe src="https://www.youtube.com/embed/pXIkpDMyTG4" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" title="Install the Claude desktop app and add a skill" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
 
 ---
 
@@ -36,6 +45,7 @@ files? See the [installation guide](https://github.com/patolojiAI/pathology-skil
 - `pathology-coder` — SNOMED CT / ICD-O-3 coding
 - `pathology-tumor-board-summary` — concise MDT summaries
 - `report-converter` — free-text → synoptic conversion
+- `pathology-report-checker` — all-in-one: compliance + staging + templates + summary + coding in one skill
 
 **Tumor-type specialists**
 
