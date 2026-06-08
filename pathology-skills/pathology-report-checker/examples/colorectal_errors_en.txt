@@ -1,0 +1,60 @@
+# Sample: Colorectal - Cross-Validation Errors
+# Expected Result: INCOMPLETE - MAJOR with ERRORS
+# Errors: CRM 0.8mm stated as negative (should be positive per ICCR)
+#         pN0 but 2 positive nodes (should be pN1a)
+#         Stage I incorrect for pT3 (should be Stage IIA minimum)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-22346
+
+SPECIMEN: Rectum, low anterior resection
+
+CLINICAL HISTORY: 71M with rectal adenocarcinoma, mid-rectum.
+
+GROSS DESCRIPTION:
+Low anterior resection specimen, 15 cm in length. Tumor located 4 cm from the distal margin, 5.2 x 4.8 cm, ulcerated, invading into mesorectal fat. Mesorectal envelope appears complete.
+
+Circumferential margin: Tumor approaches to within 0.8 mm of the radial margin posteriorly.
+
+15 lymph nodes identified.
+
+DIAGNOSIS:
+
+RECTUM, LOW ANTERIOR RESECTION:
+- Adenocarcinoma, moderately differentiated
+
+Histologic Type: Adenocarcinoma, NOS
+Histologic Grade: G2
+
+Tumor Size: 5.2 cm
+
+Depth of Invasion: Tumor invades through muscularis propria into mesorectal fat
+
+MARGINS:
+- Proximal margin: Negative
+- Distal margin: Negative, 4 cm
+- Circumferential (radial) margin: NEGATIVE, 0.8 mm clearance    ← ERROR: ≤1mm = positive per ICCR
+
+Mesorectal Integrity: Complete
+
+Lymphovascular Invasion: Present
+Perineural Invasion: Present
+Tumor Deposits: None
+
+LYMPH NODES:
+- Examined: 15
+- Positive: 2    ← ERROR: 2 positive nodes but staged as pN0 below
+
+PATHOLOGIC STAGING:
+- pT3
+- pN0    ← ERROR: Should be pN1a (1-2 positive nodes)
+- pM0
+
+STAGE GROUP: I    ← ERROR: pT3 N0 = Stage IIA, not Stage I
+
+MMR Status: Intact (all 4 markers retained)
+
+[Signed]

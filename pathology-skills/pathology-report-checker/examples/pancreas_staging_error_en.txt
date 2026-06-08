@@ -1,0 +1,50 @@
+# Sample: Pancreas - Staging Error
+# Expected Result: INCOMPLETE with STAGING ERROR
+# Error: 2.8 cm tumor confined to pancreas reported as pT3 (should be pT2)
+#        Stage IIA incorrect (should be IIB with N1)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-32346
+
+SPECIMEN: Pancreaticoduodenectomy (Whipple)
+
+CLINICAL HISTORY: 72M, pancreatic head mass, jaundice.
+
+GROSS DESCRIPTION:
+Whipple specimen with 2.8 cm firm tan mass in pancreatic head. Tumor appears confined to pancreas, no gross extension beyond organ. SMA margin close.
+
+DIAGNOSIS:
+
+PANCREAS, WHIPPLE PROCEDURE:
+- Ductal adenocarcinoma, moderately differentiated
+
+Tumor Size: 2.8 cm
+
+Tumor Extension: Tumor confined to the pancreas, no extension beyond    ← Note: confined
+
+Margins:
+- Pancreatic neck: Negative
+- Bile duct: Negative  
+- SMA/Uncinate: Positive (0 mm)
+- Posterior: Negative, 3 mm
+
+R Status: R1
+
+Lymphovascular Invasion: Present
+Perineural Invasion: Present
+
+Lymph Nodes: 2/14 positive
+
+PATHOLOGIC STAGING:
+- pT3    ← ERROR: 2.8 cm confined to pancreas = pT2, not pT3
+- pN1
+- pM0
+
+STAGE GROUP: IIA    ← ERROR: pT2 N1 = Stage IIB, pT3 N1 = Stage IIB also
+
+Histologic Grade: G2
+
+[Signed]

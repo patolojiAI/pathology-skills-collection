@@ -24,6 +24,7 @@ skills=(
     "reference-verifier"
     "statistical-methods-reviewer"
     "qupath-guide"
+    "pathology-report-checker"
 )
 
 removed=0

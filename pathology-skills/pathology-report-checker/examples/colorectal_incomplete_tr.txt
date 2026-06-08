@@ -1,0 +1,62 @@
+# Örnek: Kolorektal - Eksik Rapor
+# Beklenen Sonuç: EKSİK - MAJÖR (Skor ~65)
+# Eksik: MMR durumu, KRAS/BRAF, Tümör tomurcuklanması
+# Dil: Türkçe
+
+CERRAHİ PATOLOJİ RAPORU
+
+Hasta: [ANONİM]
+Protokol No: SP-2024-22347
+
+MATERYAL: Sağ hemikolektomi
+
+KLİNİK BİLGİ: 58 yaşında erkek hasta, çekumda kitle.
+
+MAKROSKOPİK İNCELEME:
+Sağ hemikolektomi materyali, toplam 28 cm uzunluğunda. Çekumda 4.8 x 4.2 cm boyutlarında, ülsere, kabarık tümör izlendi. Tümör barsak duvarını penetre ederek perikolik yağ dokusuna uzanıyor. İleoçekal valv intakt.
+
+Proksimal sınır: Tümörden 12 cm uzakta
+Distal sınır: Tümörden 8 cm uzakta
+Radyal sınır: 15 mm
+
+Perikolik yağ dokusunda multipl lenf nodları saptandı.
+
+MİKROSKOPİK İNCELEME VE TANI:
+
+ÇEKUM, SAĞ HEMİKOLEKTOMİ:
+- Adenokarsinom, orta derecede diferansiye
+
+HİSTOLOJİK TİP: Adenokarsinom, NOS
+HİSTOLOJİK DERECE: G2, Orta diferansiye
+
+TÜMÖR BOYUTU: 4.8 cm
+
+İNVAZYON DERİNLİĞİ: Tümör muskularis propriayı aşarak perikolik yağ dokusuna invaze (pT3)
+
+CERRAHİ SINIRLAR:
+- Proksimal sınır: Negatif
+- Distal sınır: Negatif
+- Radyal (sirkumferensiyal) sınır: Negatif, 15 mm
+
+LENFOVASKÜLİR İNVAZYON: Mevcut
+PERİNÖRAL İNVAZYON: Saptanmadı
+TÜMÖR DEPOZİTLERİ: Yok
+
+LENF NODLARI:
+- İncelenen: 14
+- Pozitif: 0
+
+PATOLOJİK EVRELEME (AJCC 8. Edisyon):
+- pT3
+- pN0
+- pM: Uygulanamaz
+
+EVRE GRUBU: IIA
+
+EK BULGULAR:
+- Tümör komşuluğunda tübüler adenom (düşük dereceli displazi)
+
+NOT: MMR immünohistokimya ve moleküler çalışmalar beklemede.
+
+Dr. [İSİM]
+[TARİH]
