@@ -2,8 +2,8 @@
 # Served from /docs on the default branch (Settings -> Pages -> Source: /docs).
 title: Pathology Skills Collection
 description: >-
-  15 specialized Claude skills for surgical pathology QA, staging, coding,
-  synoptic reporting, and research integrity — English and Turkish.
+  17 specialized Claude skills for surgical pathology QA, staging, coding,
+  synoptic reporting, research integrity, and academic writing.
 theme: jekyll-theme-cayman
 show_downloads: false
 url: https://pathologyskills.patoloji.dev
