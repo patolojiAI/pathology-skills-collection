@@ -1,0 +1,87 @@
+# Sample: Colorectal - Complete Report
+# Expected Result: COMPLIANT (Score 100)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-22345
+
+SPECIMEN: Sigmoid colon, segmental resection
+
+CLINICAL HISTORY: 67-year-old male with sigmoid colon mass identified on screening colonoscopy. Biopsy showed adenocarcinoma.
+
+GROSS DESCRIPTION:
+Received fresh, labeled "sigmoid colon," is a segment of colon measuring 22 cm in length and 4.5 cm in circumference. The mesentery is attached and measures up to 6 cm in width.
+
+Located 8 cm from one margin (designated proximal) and 10 cm from the other margin (designated distal) is an ulcerated, fungating tumor measuring 4.5 x 4.0 x 1.8 cm. The tumor is circumferential, involving approximately 70% of the bowel circumference. The tumor grossly invades through the muscularis propria into the pericolonic fat.
+
+Circumferential resection margin (radial/mesenteric margin): The tumor is located 8 mm from the nearest radial margin.
+
+Multiple lymph nodes are identified in the pericolonic fat, ranging from 0.3 to 1.2 cm. All lymph nodes submitted.
+
+The non-neoplastic mucosa shows mild diverticulosis.
+
+DIAGNOSIS:
+
+SIGMOID COLON, SEGMENTAL RESECTION:
+- Adenocarcinoma, moderately differentiated
+
+HISTOLOGIC TYPE: Adenocarcinoma, NOS
+
+HISTOLOGIC GRADE: G2, Moderately differentiated
+
+TUMOR SIZE: 4.5 cm (greatest dimension)
+
+DEPTH OF INVASION: Tumor invades through muscularis propria into pericolonic adipose tissue (pT3)
+
+MARGINS:
+- Proximal margin: Negative, >5 cm from tumor
+- Distal margin: Negative, >5 cm from tumor
+- Circumferential (radial) margin: Negative, 8 mm clearance
+
+LYMPHOVASCULAR INVASION: Present (small vessel)
+
+PERINEURAL INVASION: Present
+
+TUMOR DEPOSITS: Not identified
+
+LYMPH NODES:
+- Total examined: 18
+- Total positive: 3
+- Location: Pericolonic
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT3: Tumor invades through muscularis propria into pericolorectal tissues
+- pN1b: Metastases in 2-3 regional lymph nodes
+- pM: Not applicable (no distant sites submitted)
+
+STAGE GROUP: IIIB
+
+TREATMENT EFFECT: No prior therapy
+
+ADDITIONAL FINDINGS:
+- Mild diverticulosis
+- No evidence of inflammatory bowel disease
+- No perforation identified
+
+ANCILLARY STUDIES:
+
+Mismatch Repair Protein Immunohistochemistry:
+- MLH1: Intact (retained nuclear expression)
+- PMS2: Intact (retained nuclear expression)
+- MSH2: Intact (retained nuclear expression)
+- MSH6: Intact (retained nuclear expression)
+
+Interpretation: Mismatch repair proficient (pMMR) / Microsatellite stable (MSS)
+
+MOLECULAR STUDIES (performed at reference laboratory):
+- KRAS: Mutation detected (G12D)
+- NRAS: No mutation detected
+- BRAF: No mutation detected (V600E wild type)
+
+COMMENT: The intact MMR protein expression indicates the tumor is unlikely to be associated with Lynch syndrome. KRAS mutation detected; patient is not a candidate for anti-EGFR therapy.
+
+Electronically signed by:
+[PATHOLOGIST NAME], MD
+[DATE/TIME]

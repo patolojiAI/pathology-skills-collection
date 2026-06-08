@@ -35,6 +35,7 @@ skills=(
     "reference-verifier"
     "statistical-methods-reviewer"
     "qupath-guide"
+    "pathology-report-checker"
 )
 
 for skill in "${skills[@]}"; do

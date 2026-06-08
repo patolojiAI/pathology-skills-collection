@@ -1,0 +1,77 @@
+# Expected Output: breast_complete_en.txt
+
+═══════════════════════════════════════════════════════════════
+PATHOLOGY REPORT COMPLIANCE CHECK
+═══════════════════════════════════════════════════════════════
+
+REPORT TYPE: Breast Invasive Carcinoma - Lumpectomy
+GUIDELINES: CAP + ICCR
+DATE CHECKED: [DATE]
+
+───────────────────────────────────────────────────────────────
+COMPLIANCE SCORE
+───────────────────────────────────────────────────────────────
+SCORE: 100/100
+STATUS: ✅ COMPLIANT
+
+Gap Summary:
+  🔴 Critical: 0 elements
+  🟠 Major: 0 elements
+  🟡 Minor: 0 elements
+
+───────────────────────────────────────────────────────────────
+PRESENT ELEMENTS (Verified ✓)
+───────────────────────────────────────────────────────────────
+✓ Specimen Type: Lumpectomy
+✓ Laterality: Left
+✓ Histologic Type: Invasive carcinoma of no special type (ductal)
+✓ Histologic Grade: Grade 2 (Nottingham 6/9)
+✓ Tumor Size: 2.3 cm
+✓ Tumor Focality: Unifocal
+✓ Margins: All negative, closest medial 3mm
+✓ Lymphovascular Invasion: Present
+✓ Perineural Invasion: Not identified
+✓ DCIS Component: Present, intermediate grade
+✓ Lymph Nodes: 2/3 positive (macrometastases)
+✓ Extranodal Extension: Not identified
+✓ pT Category: pT2
+✓ pN Category: pN1a
+✓ Stage Group: IIB
+✓ ER Status: Positive (95%)
+✓ PR Status: Positive (80%)
+✓ HER2 Status: Negative (IHC 1+)
+✓ Ki-67: 25%
+
+───────────────────────────────────────────────────────────────
+CROSS-VALIDATION
+───────────────────────────────────────────────────────────────
+✓ pT2 matches tumor size 2.3 cm (>2 cm, ≤5 cm)
+✓ pN1a matches 2 positive axillary nodes (1-3 range)
+✓ Stage IIB correct for pT2 N1a M0
+✓ Node adequacy: 3 sentinel nodes appropriate for sentinel procedure
+
+───────────────────────────────────────────────────────────────
+MACROSCOPY CHECK
+───────────────────────────────────────────────────────────────
+✓ Specimen orientation documented
+✓ Inking protocol documented
+✓ Tumor size matches (gross 2.3 cm = micro 2.3 cm)
+✓ Margin distances documented to all surfaces
+✓ Lymph node count matches (3 gross = 3 micro)
+
+───────────────────────────────────────────────────────────────
+QUALITY METRICS
+───────────────────────────────────────────────────────────────
+Completeness: 100%
+Clarity: 100% (synoptic format, clear sections)
+Consistency: 100% (no cross-validation errors)
+Overall Quality: EXCELLENT
+
+───────────────────────────────────────────────────────────────
+NOTES
+───────────────────────────────────────────────────────────────
+- Excellent comprehensive report
+- All CAP core and ICCR required elements present
+- Biomarkers complete with quantitative results
+- Tumor board review documented
+═══════════════════════════════════════════════════════════════

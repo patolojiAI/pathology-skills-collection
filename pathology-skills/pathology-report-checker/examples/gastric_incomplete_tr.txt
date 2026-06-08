@@ -1,0 +1,63 @@
+# Örnek: Mide - Eksik Rapor
+# Beklenen Sonuç: EKSİK - KRİTİK (Skor ~55)
+# Eksik: Lauren sınıflaması, HER2, Borrmann tipi, pN kategorisi
+# Yetersiz: Lenf nodu sayısı (12, minimum 16 olmalı)
+# Dil: Türkçe
+
+CERRAHİ PATOLOJİ RAPORU
+
+Hasta: [ANONİM]
+Protokol No: SP-2024-42347
+
+MATERYAL: Mide, subtotal gastrektomi
+
+KLİNİK BİLGİ: 65 yaşında erkek, mide antrumunda ülsere kitle.
+
+MAKROSKOPİK İNCELEME:
+Subtotal gastrektomi materyali, 12 x 8 cm boyutlarında. Antrumda 4.2 x 3.8 cm boyutlarında ülsere tümör mevcut. Tümör kas tabakasını aşarak serozaya yaklaşıyor.
+
+Cerrahi sınırlar:
+- Proksimal: 6 cm
+- Distal: 2.5 cm
+
+Periferik yağ dokusunda lenf nodları izlendi.
+
+MİKROSKOPİK İNCELEME VE TANI:
+
+MİDE, SUBTOTAL GASTREKTOMİ:
+- Adenokarsinom
+
+HİSTOLOJİK TİP: Tübüler adenokarsinom
+
+HİSTOLOJİK DERECE: G2, Orta diferansiye
+
+TÜMÖR BOYUTU: 4.2 cm
+
+İNVAZYON DERİNLİĞİ: Tümör subserozaya invaze (pT3)
+
+CERRAHİ SINIRLAR:
+- Proksimal sınır: Negatif
+- Distal sınır: Negatif
+
+LENFOVASKÜLİR İNVAZYON: Mevcut
+PERİNÖRAL İNVAZYON: Mevcut
+
+LENF NODLARI:
+- İncelenen: 12    ← UYARI: Yetersiz, minimum 16 olmalı
+- Pozitif: 4
+
+PATOLOJİK EVRELEME:
+- pT3
+- pN: ___    ← EKSİK: pN kategorisi belirtilmemiş
+- pM: Uygulanamaz
+
+EVRE GRUBU: Belirtilmemiş    ← EKSİK
+
+EK BULGULAR:
+- Kronik gastrit
+- Helicobacter pylori: Pozitif
+
+NOT: Lauren sınıflaması ve HER2 çalışması planlanmaktadır.
+
+Dr. [İSİM]
+[TARİH]

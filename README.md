@@ -1,13 +1,13 @@
 # Pathology Skills Collection
 
-**Comprehensive clinical pathology toolkit for Claude** - 14 specialized skills for surgical pathology QA, template generation, staging, coding, clinical workflow optimization, research integrity, and digital-pathology tool guidance.
+**Comprehensive clinical pathology toolkit for Claude** - 15 specialized skills for surgical pathology QA, template generation, staging, coding, clinical workflow optimization, research integrity, and digital-pathology tool guidance.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/patolojiAI/pathology-skills-collection)](https://github.com/patolojiAI/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/patolojiAI/pathology-skills-collection)](https://github.com/patolojiAI/pathology-skills-collection/stargazers)
 
-![Version](https://img.shields.io/badge/version-1.4.0-blue)
-![Skills](https://img.shields.io/badge/skills-14-blue)
+![Version](https://img.shields.io/badge/version-1.5.0-blue)
+![Skills](https://img.shields.io/badge/skills-15-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
@@ -72,7 +72,7 @@ No cloning, no scripts, two slash commands inside a Claude Code session:
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-That installs all 14 skills at once.
+That installs all 15 skills at once.
 
 **Updating later:**
 
@@ -99,7 +99,7 @@ cd pathology-skills-collection
 claude "What stage is pT2 N0 M0 for breast using tnm-stage-calculator"
 ```
 
-Symlinks all 14 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
+Symlinks all 15 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
 
 ### Option 3: Claude.ai App (browser / desktop) — upload `.skill` files
 
@@ -116,7 +116,7 @@ Claude desktop app:
 All links point at the **latest release** automatically — they don't need
 updating when a new version is published.
 
-**Download all 14 from the [Releases page](https://github.com/patolojiAI/pathology-skills-collection/releases/latest)**, or pick individual files:
+**Download all 15 from the [Releases page](https://github.com/patolojiAI/pathology-skills-collection/releases/latest)**, or pick individual files:
 
 | # | Skill | Direct download |
 |---|---|---|
@@ -134,6 +134,7 @@ updating when a new version is published.
 | 12 | `reference-verifier` | [reference-verifier.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/reference-verifier.skill) |
 | 13 | `statistical-methods-reviewer` | [statistical-methods-reviewer.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/statistical-methods-reviewer.skill) |
 | 14 | `qupath-guide` | [qupath-guide.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/qupath-guide.skill) |
+| 15 | `pathology-report-checker` | [pathology-report-checker.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/pathology-report-checker.skill) |
 
 No terminal, no git, no admin rights needed. Updates: download the new
 release's `.skill` file and re-upload.
@@ -204,7 +205,8 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 
 ## Skills
 
-14 skills in four groups: **clinical workflow tools** for daily report QA,
+15 skills in four groups: **clinical workflow tools** for daily report QA
+(including the all-in-one `pathology-report-checker`),
 **all-in-one specialist skills** that handle a tumor type end-to-end,
 **research-integrity skills** for manuscripts and statistical reviews, and
 **digital-pathology tooling** for software platforms used in practice.
@@ -225,8 +227,9 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 | 12 | [`reference-verifier`](#12-reference-verifier) | Research integrity | 4-level citation audit (existence → metadata → topic → context) |
 | 13 | [`statistical-methods-reviewer`](#13-statistical-methods-reviewer) | Research integrity | Statistical-methods audit on a 0–18 scored rubric |
 | 14 | [`qupath-guide`](#14-qupath-guide) | Digital pathology tooling | QuPath troubleshooting, workflows, and Groovy scripting |
+| 15 | [`pathology-report-checker`](#15-pathology-report-checker) | Clinical · all-in-one | One-shot CAP/ICCR check + staging + templates + summary + coding + amendments |
 
-> All 13 skills auto-detect English and Turkish input. The four tumor specialists
+> All 15 skills auto-detect English and Turkish input. The four tumor specialists
 > share the four core clinical workflows (compliance, staging, templates, summaries)
 > with the single-purpose skills — pick the **specialist** when you want one
 > skill to own a whole case, or the **single-purpose skills** when you want them
@@ -507,6 +510,27 @@ claude "Use qupath-guide: my Run for Project script does nothing, no errors"
 claude "Use qupath-guide: walk me through Ki-67 scoring on an IHC slide"
 ```
 
+#### 15. `pathology-report-checker`
+
+The **all-in-one** clinical skill: a single skill that does the whole report-QA
+loop end to end — CAP/ICCR compliance scoring with severity weighting, pTNM
+staging validation (AJCC 8th), blank/pre-filled synoptic templates, a 3–5 line
+tumor-board summary, SNOMED CT / ICD-O-3 coding, free-text → synoptic
+conversion, and amendment/addendum drafting. Self-contained (bundles its own
+references), and the same skill is published standalone at
+[patolojiAI/pathology-report-checker-skill](https://github.com/patolojiAI/pathology-report-checker-skill).
+It **complements** rather than replaces `pathology-compliance-checker` — reach
+for the report-checker when you want one skill to own a whole case, or the
+single-purpose skills when you want each step on its own.
+
+- **Triggers:** "check this report for CAP compliance", "verify staging", "generate synoptic template", "tumor board summary", "convert to synoptic", "calculate TNM stage", "code with SNOMED"
+- **Tumor types:** breast invasive carcinoma, colorectal resection, exocrine pancreas, gastric carcinoma (EN/TR)
+- **Use it for:** an end-to-end pass on a single report. **Don't** use it for non-cancer, cytology, or unsupported tumor types
+
+```bash
+claude "Check this pancreas Whipple report for CAP/ICCR compliance" < report.txt
+```
+
 ---
 
 ## Documentation
@@ -529,7 +553,7 @@ claude "Use qupath-guide: walk me through Ki-67 scoring on an IHC slide"
 
 ```
 pathology-skills-collection/
-├── pathology-skills/          # 10 individual skills
+├── pathology-skills/          # 15 individual skills
 ├── shared-references/         # Common guidelines (TNM, codes, templates)
 ├── scripts/                   # Python tools (batch, single, watch, file readers)
 ├── samples/                   # Sample reports with expected outputs

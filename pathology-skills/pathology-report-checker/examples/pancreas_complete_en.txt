@@ -1,0 +1,92 @@
+# Sample: Pancreas - Complete Report
+# Expected Result: COMPLIANT (Score 100)
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-32345
+
+SPECIMEN: Pancreaticoduodenectomy (Whipple procedure)
+
+CLINICAL HISTORY: 68-year-old female with obstructive jaundice. CT shows 2.5 cm mass in the pancreatic head. CA 19-9 elevated at 485 U/mL.
+
+GROSS DESCRIPTION:
+Received fresh, labeled "Whipple specimen," consisting of:
+- Pancreatic head: 6 x 5 x 4 cm
+- Duodenum: 22 cm in length
+- Distal common bile duct: 3.5 cm in length
+- Distal stomach: 4 cm cuff
+
+A firm, ill-defined, tan-white tumor is identified in the pancreatic head, measuring 2.8 x 2.5 x 2.2 cm. The tumor is located 0.3 cm from the superior mesenteric artery (SMA)/uncinate margin, 0.8 cm from the posterior/retroperitoneal margin, and 1.5 cm from the pancreatic neck margin.
+
+The tumor does not grossly involve the duodenal mucosa, common bile duct, or ampulla of Vater.
+
+MARGINS (inked):
+- SMA/uncinate margin: Red
+- Posterior/retroperitoneal margin: Blue
+- Anterior surface: Yellow
+- Pancreatic neck margin: Shaved en face
+
+Lymph nodes: Multiple lymph nodes identified in the peripancreatic, hepatic artery, and superior mesenteric regions. Total 16 lymph nodes submitted.
+
+DIAGNOSIS:
+
+PANCREAS HEAD, PANCREATICODUODENECTOMY (WHIPPLE):
+- Pancreatic ductal adenocarcinoma
+
+HISTOLOGIC TYPE: Ductal adenocarcinoma, NOS
+
+HISTOLOGIC GRADE: G2, Moderately differentiated
+
+TUMOR SIZE: 2.8 cm (greatest dimension)
+
+TUMOR LOCATION: Pancreatic head
+
+TUMOR EXTENSION:
+- Tumor confined to the pancreas
+- No involvement of: duodenum, common bile duct, ampulla, peripancreatic soft tissue
+- No involvement of celiac axis or superior mesenteric artery
+
+MARGINS:
+- Pancreatic neck margin: Negative
+- Common bile duct margin: Negative
+- Duodenal (proximal and distal) margins: Negative
+- SMA/Uncinate margin: Positive (tumor at inked margin)
+- Posterior/Retroperitoneal margin: Negative, 2 mm clearance
+- Anterior surface: Negative
+
+RESECTION STATUS: R1 (microscopic residual disease at SMA margin)
+
+LYMPHOVASCULAR INVASION: Present (large vessel venous invasion)
+
+PERINEURAL INVASION: Present, extensive
+
+LYMPH NODES:
+- Total examined: 16
+- Total positive: 3
+- Largest metastasis: 6 mm
+- Extranodal extension: Present in 1 node
+
+PATHOLOGIC STAGING (AJCC 8th Edition):
+- pT2: Tumor >2 cm but ≤4 cm, confined to pancreas
+- pN1: Metastases in 1-3 regional lymph nodes
+- pM: Not applicable (no distant sites submitted)
+
+STAGE GROUP: IIB
+
+PRECURSOR LESIONS:
+- PanIN-2 identified at pancreatic neck margin
+- PanIN-1A in background pancreas
+
+ADDITIONAL FINDINGS:
+- Chronic pancreatitis in non-neoplastic pancreas
+- Common bile duct: Reactive epithelial changes, no dysplasia
+- Duodenum: Unremarkable
+- Stomach margin: Unremarkable
+
+COMMENT: Positive SMA margin with extensive perineural invasion. Discussed at multidisciplinary tumor board; adjuvant chemotherapy recommended.
+
+Electronically signed by:
+[PATHOLOGIST NAME], MD
+[DATE/TIME]

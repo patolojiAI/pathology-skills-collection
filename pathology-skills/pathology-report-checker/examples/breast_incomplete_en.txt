@@ -1,0 +1,49 @@
+# Sample: Breast - Incomplete (Missing Staging)
+# Expected Result: INCOMPLETE - MAJOR (Score ~70)
+# Missing: pT, pN, Stage Group, Ki-67
+# Language: English
+
+SURGICAL PATHOLOGY REPORT
+
+Patient: [ANONYMIZED]
+Accession: SP-2024-12346
+
+SPECIMEN: Right breast, mastectomy with axillary lymph node dissection
+
+CLINICAL HISTORY: 62F with right breast mass.
+
+GROSS DESCRIPTION:
+Right mastectomy specimen weighing 485 grams, measuring 18 x 15 x 4 cm. Ellipse of skin 12 x 5 cm with nipple-areola complex. Serial sectioning reveals a firm tan-white tumor, 3.5 cm, in the upper outer quadrant, 2.5 cm from the nipple. Multiple lymph nodes identified in the axillary tail.
+
+DIAGNOSIS:
+
+RIGHT BREAST, MASTECTOMY:
+- Invasive ductal carcinoma
+
+Histologic Type: Invasive carcinoma of no special type
+
+Histologic Grade: Grade 2 (Nottingham score 7/9)
+- Tubules: 3
+- Nuclear pleomorphism: 2
+- Mitoses: 2
+
+Tumor Size: 3.5 cm
+
+Margins: All margins negative, closest deep margin 0.8 cm
+
+Lymphovascular Invasion: Present
+
+Perineural Invasion: Not identified
+
+Lymph Nodes: 4 of 22 axillary lymph nodes positive for metastatic carcinoma
+- Largest metastasis: 8 mm
+- Extranodal extension: Present
+
+DCIS: Present, high grade, with comedonecrosis, 20% of tumor
+
+Biomarkers:
+- ER: Positive (90%)
+- PR: Positive (60%)
+- HER2: Negative (IHC 0)
+
+[Signed]
