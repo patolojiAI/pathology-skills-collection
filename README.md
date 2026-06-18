@@ -1,13 +1,13 @@
 # Pathology Skills Collection
 
-**Comprehensive clinical pathology toolkit for Claude** - 15 specialized skills for surgical pathology QA, template generation, staging, coding, clinical workflow optimization, research integrity, and digital-pathology tool guidance.
+**Comprehensive clinical pathology toolkit for Claude** - 17 specialized skills for surgical pathology QA, template generation, staging, coding, clinical workflow optimization, research integrity, and digital-pathology tool guidance.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/patolojiAI/pathology-skills-collection)](https://github.com/patolojiAI/pathology-skills-collection/issues)
 [![GitHub stars](https://img.shields.io/github/stars/patolojiAI/pathology-skills-collection)](https://github.com/patolojiAI/pathology-skills-collection/stargazers)
 
-![Version](https://img.shields.io/badge/version-1.5.0-blue)
-![Skills](https://img.shields.io/badge/skills-15-blue)
+![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Skills](https://img.shields.io/badge/skills-17-blue)
 ![Tumor Types](https://img.shields.io/badge/tumor%20types-4-green)
 ![Languages](https://img.shields.io/badge/languages-EN%2FTR-orange)
 
@@ -72,7 +72,7 @@ No cloning, no scripts, two slash commands inside a Claude Code session:
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-That installs all 15 skills at once.
+That installs all 17 skills at once.
 
 **Updating later:**
 
@@ -99,7 +99,7 @@ cd pathology-skills-collection
 claude "What stage is pT2 N0 M0 for breast using tnm-stage-calculator"
 ```
 
-Symlinks all 15 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
+Symlinks all 17 skills into `~/.claude/skills/`. Uninstall with `./uninstall.sh`.
 
 ### Option 3: Claude.ai App (browser / desktop) — upload `.skill` files
 
@@ -116,7 +116,7 @@ Claude desktop app:
 All links point at the **latest release** automatically — they don't need
 updating when a new version is published.
 
-**Download all 15 from the [Releases page](https://github.com/patolojiAI/pathology-skills-collection/releases/latest)**, or pick individual files:
+**Download all 17 from the [Releases page](https://github.com/patolojiAI/pathology-skills-collection/releases/latest)**, or pick individual files:
 
 | # | Skill | Direct download |
 |---|---|---|
@@ -135,6 +135,8 @@ updating when a new version is published.
 | 13 | `statistical-methods-reviewer` | [statistical-methods-reviewer.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/statistical-methods-reviewer.skill) |
 | 14 | `qupath-guide` | [qupath-guide.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/qupath-guide.skill) |
 | 15 | `pathology-report-checker` | [pathology-report-checker.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/pathology-report-checker.skill) |
+| 16 | `citation-management` | [citation-management.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/citation-management.skill) |
+| 17 | `peer-review` | [peer-review.skill](https://github.com/patolojiAI/pathology-skills-collection/releases/latest/download/peer-review.skill) |
 
 No terminal, no git, no admin rights needed. Updates: download the new
 release's `.skill` file and re-upload.
@@ -205,11 +207,12 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 
 ## Skills
 
-15 skills in four groups: **clinical workflow tools** for daily report QA
+17 skills in four groups: **clinical workflow tools** for daily report QA
 (including the all-in-one `pathology-report-checker`),
 **all-in-one specialist skills** that handle a tumor type end-to-end,
-**research-integrity skills** for manuscripts and statistical reviews, and
-**digital-pathology tooling** for software platforms used in practice.
+**research-integrity skills** for manuscripts, citations, and statistical
+reviews, and **digital-pathology tooling** for software platforms used in
+practice.
 
 | # | Skill | Group | One-liner |
 |---|---|---|---|
@@ -228,8 +231,10 @@ python scripts/process_skill.py --skill breast-pathology-specialist reports.xlsx
 | 13 | [`statistical-methods-reviewer`](#13-statistical-methods-reviewer) | Research integrity | Statistical-methods audit on a 0–18 scored rubric |
 | 14 | [`qupath-guide`](#14-qupath-guide) | Digital pathology tooling | QuPath troubleshooting, workflows, and Groovy scripting |
 | 15 | [`pathology-report-checker`](#15-pathology-report-checker) | Clinical · all-in-one | One-shot CAP/ICCR check + staging + templates + summary + coding + amendments |
+| 16 | [`citation-management`](#16-citation-management) | Research integrity | Search PubMed/Scholar, validate citations, DOI → BibTeX |
+| 17 | [`peer-review`](#17-peer-review) | Research integrity | Checklist-based manuscript/grant review (CONSORT/STROBE) |
 
-> All 15 skills auto-detect English and Turkish input. The four tumor specialists
+> The clinical skills auto-detect English and Turkish input. The four tumor specialists
 > share the four core clinical workflows (compliance, staging, templates, summaries)
 > with the single-purpose skills — pick the **specialist** when you want one
 > skill to own a whole case, or the **single-purpose skills** when you want them
@@ -531,6 +536,34 @@ single-purpose skills when you want each step on its own.
 claude "Check this pancreas Whipple report for CAP/ICCR compliance" < report.txt
 ```
 
+#### 16. `citation-management`
+
+Academic-writing support: search **PubMed** and **Google Scholar**, extract and
+validate citation metadata, convert DOIs to **BibTeX**, and check reference
+accuracy for manuscripts. Ships Python helpers under `scripts/` (PubMed/Scholar
+search, DOI→BibTeX, metadata extraction, citation validation). English.
+
+- **Triggers:** "find papers on…", "convert this DOI to BibTeX", "validate these references", "check citation accuracy"
+- **Use it for:** building and verifying a reference list while writing. *Author: K-Dense Inc. (MIT) — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).*
+
+```bash
+claude "Use citation-management to convert these DOIs to BibTeX and validate them"
+```
+
+#### 17. `peer-review`
+
+Structured **manuscript / grant review**: checklist-based evaluation of
+methodology, statistical validity, and reporting-standards compliance
+(CONSORT / STROBE), with constructive feedback. Best for actually writing a
+formal review. English.
+
+- **Triggers:** "write a peer review of this manuscript", "review this paper's methods", "CONSORT/STROBE compliance check"
+- **Use it for:** drafting a reviewer report. Pairs with `scientific-similarity-checker`, `reference-verifier`, and `statistical-methods-reviewer`. *Author: K-Dense Inc. (MIT) — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).*
+
+```bash
+claude "Use peer-review to write a structured review of this manuscript" < paper.pdf
+```
+
 ---
 
 ## Documentation
@@ -553,7 +586,7 @@ claude "Check this pancreas Whipple report for CAP/ICCR compliance" < report.txt
 
 ```
 pathology-skills-collection/
-├── pathology-skills/          # 15 individual skills
+├── pathology-skills/          # 17 individual skills
 ├── shared-references/         # Common guidelines (TNM, codes, templates)
 ├── scripts/                   # Python tools (batch, single, watch, file readers)
 ├── samples/                   # Sample reports with expected outputs

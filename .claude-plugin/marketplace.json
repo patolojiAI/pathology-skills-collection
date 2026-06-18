@@ -5,8 +5,8 @@
     "email": "serdarbalci@serdarbalci.com"
   },
   "metadata": {
-    "description": "Comprehensive clinical pathology toolkit - 15 specialized skills for surgical pathology quality assurance, CAP/ICCR compliance checking, TNM staging, synoptic reporting, SNOMED coding for breast/colorectal/pancreas/gastric carcinoma, the all-in-one pathology-report-checker, academic integrity tools (scientific similarity checking, reference verification, statistical methods review), and digital pathology tooling guidance (QuPath troubleshooting, workflows, and Groovy scripting).",
-    "version": "1.5.0"
+    "description": "Comprehensive clinical pathology toolkit - 17 specialized skills for surgical pathology quality assurance, CAP/ICCR compliance checking, TNM staging, synoptic reporting, SNOMED coding for breast/colorectal/pancreas/gastric carcinoma, the all-in-one pathology-report-checker, academic integrity tools (scientific similarity checking, reference verification, statistical methods review, citation management, peer review), and digital pathology tooling guidance (QuPath troubleshooting, workflows, and Groovy scripting).",
+    "version": "1.6.0"
   },
   "plugins": [
     {
@@ -28,6 +28,8 @@
         "./pathology-skills/scientific-similarity-checker",
         "./pathology-skills/reference-verifier",
         "./pathology-skills/statistical-methods-reviewer",
+        "./pathology-skills/citation-management",
+        "./pathology-skills/peer-review",
         "./pathology-skills/qupath-guide",
         "./pathology-skills/pathology-report-checker"
       ]

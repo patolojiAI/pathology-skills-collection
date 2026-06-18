@@ -1,9 +1,9 @@
 ---
 title: Pathology Skills Collection
-description: 15 specialized Claude skills for surgical pathology QA, staging, coding, synoptic reporting, and research integrity.
+description: 17 specialized Claude skills for surgical pathology QA, staging, coding, synoptic reporting, and research integrity.
 ---
 
-**A modular collection of 15 Claude skills** for clinical pathologists, QA teams,
+**A modular collection of 17 Claude skills** for clinical pathologists, QA teams,
 and researchers — CAP/ICCR compliance checking, synoptic templates, TNM staging,
 SNOMED CT / ICD-O-3 coding, tumor-board summaries, and research-integrity tools —
 in **English and Turkish**.
@@ -21,7 +21,7 @@ in **English and Turkish**.
 /plugin install pathology-skills@pathology-skills-collection
 ```
 
-Installs all 15 skills at once. Prefer scripts, or the Claude.ai app with `.skill`
+Installs all 17 skills at once. Prefer scripts, or the Claude.ai app with `.skill`
 files? See the [installation guide](https://github.com/patolojiAI/pathology-skills-collection#installation).
 
 📺 **New to Claude?** This short video walks through installing the Claude
@@ -57,6 +57,8 @@ desktop app and adding a skill:
 - `scientific-similarity-checker` — plagiarism / duplicate-publication screening
 - `reference-verifier` — 4-level citation auditor
 - `statistical-methods-reviewer` — 9-aspect methods rubric
+- `citation-management` — PubMed/Scholar search, citation validation, DOI → BibTeX
+- `peer-review` — checklist-based manuscript/grant review (CONSORT/STROBE)
 - `qupath-guide` — digital-pathology / Groovy scripting guidance
 
 ---

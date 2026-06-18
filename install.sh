@@ -34,6 +34,8 @@ skills=(
     "scientific-similarity-checker"
     "reference-verifier"
     "statistical-methods-reviewer"
+    "citation-management"
+    "peer-review"
     "qupath-guide"
     "pathology-report-checker"
 )
